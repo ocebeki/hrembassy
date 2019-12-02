@@ -1,0 +1,109 @@
+.form {
+    &__row {
+        position: relative;
+        width: 400px;
+        max-width: 100%;
+        margin: auto;
+    }
+    
+    input, textarea {
+        display: block;
+        width: 100%;
+    }
+    
+    textarea {
+        height: 100px;
+    }
+    
+    label {
+        line-height: 2;
+    }
+    
+    [type="checkbox"] {
+        background: red;
+    }
+    
+    [type="submit"] {
+        @extend .btn;
+    }
+    
+    .wpcf7-acceptance {
+        a {
+            color: $color-main-light;
+            text-decoration: underline;
+            
+            &:hover {
+                color: $color-white;
+            }
+        }
+        
+        label {
+            display: flex;
+            position: relative;
+            background-color: transparent;
+            top: 0;
+            left: 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 0;
+            
+            span {
+                padding-left: 5px;
+                font-size: 12px;
+                line-height: 1.4;
+                
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 2px;
+                    border: solid 1px $color-accent;
+                }
+            }
+        }
+        
+        input[type="checkbox"] {
+            opacity: 0;
+            width: auto;
+            
+            &:checked + span:before {
+                background-color: $color-accent;
+                border-color: $color-accent;
+                content: "✓";
+                color: $color-white;
+                font-size: 11px;
+                font-weight: 700;
+                text-align: center;
+                line-height: 11px;
+            }
+        }
+    }
+}
+
+.wpcf7-response-output {
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 12px;
+}
+
+.wpcf7-validation {
+    &-errors {
+        color: $color-accent;
+    }
+}
+
+span.wpcf7-not-valid-tip {
+    color: $color-accent;
+    font-size: 10px;
+}
+
+div.wpcf7-mail-sent-ok {
+    color: $color-accent;
+}

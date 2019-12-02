@@ -1,0 +1,26 @@
+.prosta {
+    &__wrapper {
+        display: flex;
+        background-color: $color-white;
+        border-radius: 2px;
+        padding: 40px;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            flex-wrap: wrap;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 15px;
+        }
+    }
+    
+    &__heading {
+        font-size: 24px;
+        font-weight: 700;
+        color: $color-main;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.conf-why {
+    &__wrapper {
+        padding: 50px 0;
+    }
+
+    &__content-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: $color-main;
+        margin-bottom: 65px;
+    }
+
+    &__title {
+        width: 171px;
+    }
+
+    &__text {
+        font-weight: 300;
+        width: 640px;
+    }
+
+    &__content-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: calc(25% - 20px);
+        height: 400px;
+        margin: 0 10px;
+        padding: 25px;
+        background: $color-main-conf;
+        color: $color-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &:hover {
+            background: #54438a;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__item-number {
+        font-size: 27px;
+        opacity: 0.5;
+    }
+
+    &__item-icon {
+        width: 95px;
+        height: 95px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__item-text {
+        font-weight: 700;
+        display: flex;
+        align-items: flex-end;
+        height: 61px;
+    }
+}

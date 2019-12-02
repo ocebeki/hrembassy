@@ -1,0 +1,142 @@
+.warsztaty {
+    &__list {
+        width: 100%;
+        border-collapse: separate; 
+        border-spacing: 0 10px;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: block;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            tbody, td, tr { 
+                display: block; 
+            }                 
+        }
+    }
+    
+    &__item {
+        background-color: $color-white;
+        border-radius: 2px;
+        color: $color-main;
+        cursor: pointer;
+        transition: color 0.3s;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            margin-bottom: 10px;
+        }
+        
+        .btn {
+            background-color: $color-main;
+            border-color: $color-main;
+        }
+        
+        &:hover {
+            color: $color-accent;
+            
+            .btn {
+                background-color: $color-accent;
+                border-color: $color-accent;
+            }
+        }
+    }
+    
+    &__part {
+        padding: 30px 10px;
+        
+        &:first-child {
+            padding-left: 30px;
+        }
+        
+        &:last-child {
+            padding-right: 30px;
+            width: 1%;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 10px;
+            
+            &.name {
+                
+            }
+            
+            &.date {
+                width: 50%;
+                float: left;
+                padding-left: 30px;
+            }
+
+            &.place {
+                width: 50%;
+                float: left;
+                padding-right: 30px;
+                padding-left: 20px;
+            }
+
+            &.price {
+                width: 50%;
+                float: left;
+                padding-left: 30px;
+                clear: both;
+            }
+
+            &.stock {
+                width: 50%;
+                float: left;
+                padding-right: 30px;
+                padding-left: 20px;
+            }
+
+            &.more {
+                width: 100%;
+                float: left;
+                text-align: center;
+            }
+        }
+    }
+    
+    &__name {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    &__date {
+        display: flex;
+        align-items: center;
+        
+        svg {
+            margin-right: 5px;
+        }
+    }
+    
+    &__price {
+        min-width: 100px;
+    }
+    
+    &__place {
+        display: flex;
+        align-items: center;
+        
+        svg {
+            margin-right: 5px;
+        }
+    }
+    
+    &__stock {
+        display: flex;
+        align-items: center;
+        
+        svg {
+            margin-right: 5px;
+        }
+    }
+    
+    &__head {
+        display: flex;
+        align-items: center;
+        
+        path {
+            fill: $color-accent;
+        }
+    }
+}

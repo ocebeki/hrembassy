@@ -1,0 +1,43 @@
+.home {
+    &__social {
+        position: absolute;
+        bottom: 60px;
+        right: 50px;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: none;
+        }
+    }
+    
+    &__mouse {
+        position: absolute;
+        bottom: 60px;
+        left: 50px;
+    }
+    
+    &__slider {
+        
+    }
+    
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__left {
+        width: 50%;
+    }
+    
+    &__blog {
+    }
+    
+    &__blog-wrapper {
+        background-color: $color-white;
+        border-radius: 2px;
+        padding: 60px;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 30px;
+        }
+    }
+}

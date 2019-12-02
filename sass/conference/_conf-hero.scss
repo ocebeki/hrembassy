@@ -1,0 +1,29 @@
+.conf-hero {
+    background: $color-black;
+    color: $color-white;
+    display: flex;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 200px 0;
+        position: relative;
+    }
+
+    &__title {
+        width: 400px;
+        text-align: center;
+    }
+
+    &__btn {
+        background: #37285f;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+            background: $color-accent;
+        }
+    }
+}

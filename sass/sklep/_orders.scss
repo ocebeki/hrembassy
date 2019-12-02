@@ -1,0 +1,122 @@
+.orders {
+    &__top {
+        color: $color-main;
+        border-radius: 2px 2px 0 0;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+    }
+    
+    &__table {
+        margin-bottom: 0 !important;
+        
+        a {
+            color: $color-main
+        }
+        
+        thead tr {
+            &:hover {
+                background-color: $color-white;
+            }
+        }
+        
+        tr {
+            &:hover {
+                background-color: $color-grey;
+                
+                @media screen and (max-width: $screen-sm - 1) {
+                    background-color: initial;
+                }
+                
+                .view {
+                    opacity: 1;
+                }
+            }
+        }
+        
+        th {
+            color: $color-grey-dark !important;
+            padding-top: 13px !important;
+            font-size: 12px;
+        }
+        
+        td {
+            padding-top: 23px !important;
+            padding-bottom: 23px !important;
+            font-weight: 700;
+            color: $color-main !important;
+        }
+        
+        .view {
+            opacity: 0;
+            
+            @media screen and (max-width: $screen-sm - 1) {
+                opacity: 1;
+            }
+            
+            svg {
+                @media screen and (max-width: $screen-md) {
+                    width: 17px;   
+                }   
+            }
+        }
+        
+        &--main {
+            padding: 0 30px;
+            
+            @media screen and (max-width: $screen-sm - 1) {
+                padding: 20px;
+            }
+            
+            thead tr {
+                &:hover {
+                    background-color: $color-main-dark;
+                }
+            }
+
+            tr {
+                &:hover {
+                    background-color: $color-main-dark;
+                }
+            }
+
+            th {
+                color: $color-main-light !important;
+            }
+            
+            td {
+                border-color: $color-main-light !important;
+            }
+        }
+    }
+    
+    &__details-wrapper {
+        padding: 0 60px;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            padding: 0 30px;
+        }
+        
+        .zamowienie__heading {
+            padding: 0;
+            margin-bottom: 30px;
+        }
+    }
+    
+    &__bottom {
+        border-top: solid 1px $color-grey-line;
+        padding: 30px 50px;
+        text-align: right;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 30px 10px;   
+        }
+    }
+    
+}

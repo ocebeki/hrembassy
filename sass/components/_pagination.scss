@@ -1,0 +1,153 @@
+.woocommerce-pagination {
+    margin-top: 10px;
+    background-color: $color-white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    
+    .page-numbers {
+        width: 100%;
+        display: flex !important;
+        justify-content: center;
+        position: relative;
+        border: none !important;
+        height: 50px;
+        align-items: center;
+        margin: 0 0 10px 0 !important;
+        
+        li {
+            border: none !important;
+            
+            a, span {
+                margin: 0 !important;
+                font-weight: 700 !important;
+                color: $color-grey-line !important;
+                
+                &:hover {
+                    background-color: transparent !important;
+                    color: $color-accent !important;
+                }
+            }
+            
+            .current {
+                background-color: transparent !important;
+                color: $color-main !important;
+                
+                &:hover {
+                    color: $color-main !important;
+                }
+            }
+        }
+        
+        .prev.page-numbers {
+            position: absolute;
+            top: 0;
+            left: -25px;
+            width: 50px;
+            height: 50px;
+            background-color: $color-accent;
+            color: $color-accent-light;
+            
+            &:hover {
+                background-color: $color-accent !important;
+                color: $color-white !important;
+            }
+        }
+        
+        .next.page-numbers {
+            position: absolute;
+            top: 0;
+            right: -25px;
+            width: 50px;
+            height: 50px;
+            background-color: $color-accent;
+            
+            &:hover {
+                background-color: $color-accent !important;
+                color: $color-white !important;
+            }
+        }
+    }
+}
+
+.pagination {
+    background-color: $color-white;
+    position: relative;
+    padding-bottom: 20px;
+    
+    &__wrapper {
+        width: 100%;
+        display: flex !important;
+        justify-content: center;
+        height: 50px;
+        align-items: center;
+    }
+
+    a, span {
+        margin: 0 !important;
+        font-weight: 700 !important;
+        color: $color-grey-line !important;
+        padding: 5px;
+
+        &:hover {
+            background-color: transparent !important;
+            color: $color-accent !important;
+        }
+    }
+
+    .current {
+        background-color: transparent !important;
+        color: $color-main !important;
+
+        &:hover {
+            color: $color-main !important;
+        }
+    }
+        
+    .prev {
+        position: absolute;
+        top: 0;
+        left: -25px;
+        width: 50px;
+        height: 50px;
+        background-color: $color-accent;
+        color: $color-accent-light;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+
+        &:hover {
+            background-color: $color-accent !important;
+            color: $color-white !important;
+        }
+        
+        &:before {
+            content: "<";
+            display: block;
+        }
+    }
+
+    .next {
+        position: absolute;
+        top: 0;
+        right: -25px;
+        width: 50px;
+        height: 50px;
+        background-color: $color-accent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+
+        &:hover {
+            background-color: $color-accent !important;
+            color: $color-white !important;
+        }
+        
+        &:before {
+            content: ">";
+            display: block;
+        }
+    }
+}

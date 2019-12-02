@@ -1,0 +1,255 @@
+.product {
+    &__wrapper {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        text-align: center;
+        
+        @media screen and (max-width: $screen-md) {
+            padding-bottom: 30px;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            flex-wrap: wrap;   
+            flex-direction: column-reverse;
+            padding: 30px;
+        }
+    }
+    
+    &__left {
+        width: 58.333%;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 80px;
+        display: flex;
+        align-items: center;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            width: 100%;   
+            padding: 0;
+        }
+    }
+    
+    &__right {
+        width: 41.777%;
+        padding-top: 50px;
+        padding-right:  8.333%;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            width: 100%;   
+            padding-top: 20px;
+            padding-right: 0;
+        }
+    }
+    
+    &__meta {
+        margin-bottom: 25px;
+        
+        path {
+            fill: $color-main;
+        }
+    }
+    
+    &__meta-wrapper {
+        display: flex;
+        align-items: center;
+        
+        path {
+            fill: $color-main;
+        }
+        
+        svg {
+            @media screen and (max-width: $screen-md) {
+                width: 15px;   
+            }
+        }
+    }
+    
+    &__meta-line {
+        margin-bottom: 20px;
+    }
+    
+    &__meta-text {
+        margin-left: 10px;
+        
+        @media screen and (max-width: $screen-md) {
+            margin-left: 5px;
+        }
+        
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    
+    &__button {
+        button {
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        
+        .btn {
+            &:hover {
+                background-color: $color-white;
+                border-color: $color-white;
+                color: $color-main;
+            }
+        }
+    }
+    
+    &__price-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        color: $color-main;
+    }
+    
+    &__price-left {
+        text-align: left;
+        margin-right: 120px;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            margin-right: 20px;
+            overflow: visible;
+        }
+        
+        .sklep__price-new {
+            font-size: 34px;
+        }
+    }
+    
+    &__title {
+        font-size: 34px;
+        font-weight: 700;
+        margin: auto;
+        margin-bottom: 30px;
+        color: $color-main;
+        max-width: 90%;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            font-size: 28px;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            font-size: 20px;
+            max-width: 100%;
+        }
+    }
+    
+    &__address-line {
+        color: $color-grey-dark;
+        display: flex;
+        margin-bottom: 10px;
+        
+        svg {
+            margin-right: 15px;
+            flex-shrink: 0;
+            position: relative;
+            top: 2px;
+            
+            @media screen and (max-width: $screen-lg) {
+                margin-right: 10px;
+            }
+        }
+    }
+    
+    .single_add_to_cart_button {
+        background: none;
+        border: none;
+        font-size: 14px;
+        color: $color-grey-dark;
+        text-align: left;
+        width: auto;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            margin: auto;
+        }
+        
+        &:hover {
+            color: $color-main;
+            
+            path {
+                fill: $color-main;
+            }
+        }
+        
+        &:focus {
+            outline: 0;
+        }
+        
+        svg {
+            margin-right: 7px;
+            position: relative;
+            top: -2px;
+            
+            @media screen and (max-width: $screen-md) {
+                width: 15px;   
+            }
+        }
+        
+        path {
+            fill: $color-grey-dark;
+        }
+        
+        @media screen and (max-width: $screen-lg) {
+            font-size: 12px;
+        }
+    }
+    
+    &__prequestion {
+        font-weight: 700;
+        color: $color-main;
+    }
+    
+    &__question {
+        font-size: 34px;
+        font-weight: 700;
+        color: $color-accent;
+        margin-bottom: 30px;
+        width: 865px;
+        max-width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            font-size: 28px;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            font-size: 18px;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    
+    &__fields {
+        width: 720px;
+        max-width: 80%;
+        margin: auto;
+        padding: 30px;
+        border: solid 1px $color-grey-line;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        color: $color-main;
+        margin-bottom: 40px;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            max-width: 100%;
+            padding: 20px 10px;
+            margin-bottom: 10px;
+        }
+        
+        & > * {
+            width: 33.333%;
+        }
+    }
+    
+    &__field {
+        path {
+            fill: $color-accent;
+        }
+    }
+}

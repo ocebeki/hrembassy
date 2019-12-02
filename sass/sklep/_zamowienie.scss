@@ -1,0 +1,99 @@
+.zamowienie {
+    &__wrapper {
+        padding: 35px 38px;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 30px 0;
+        }
+    }
+    
+    &__dane {
+        margin-bottom: 20px;
+    }
+    
+    &__heading {
+        font-weight: 700;
+        font-size: 18px;
+        color: $color-main;
+        
+        label {
+            color: $color-black;
+        }
+        
+        @media screen and (max-width: $screen-lg) {
+            font-size: 16px;
+        }
+    }
+    
+    &__shipping {
+        
+    }
+    
+    &__faktura {
+        margin-bottom: 50px;
+    }
+    
+    &__bottom {
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: solid 1px $color-grey-line;
+        
+        @media screen and (max-width: $screen-lg) {
+            padding: 30px;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 30px 10px;
+        }
+    }
+    
+    &__platnosc {
+        margin-top: 20px;
+        
+        .zamowienie__heading {
+            margin-bottom: 10px;
+        }
+    }
+    
+    &__platnosc-img {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-left: 10px;
+            display: inline-block;
+        }
+    }
+    
+    &__info {
+        line-height: 1.4;
+        color: $color-black;
+        margin-bottom: 60px;
+    }
+    
+    &__notes-cloud {
+        padding: 10px;
+        background-color: $color-main;
+        color: $color-white;
+        position: relative;
+        border-radius: 2px;
+        font-size: 12px;
+        
+        &:before {
+            content: "▼";
+            position: absolute;
+            top: calc(100% - 5px);
+            left: 10px;
+            z-index: 2;
+            color: $color-main;
+        }
+    }
+    
+    &__table {
+        .product-quantity {
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.categories {
+    margin-bottom: 16px;
+    
+    &__item {
+        padding: 3px 5px;
+        background-color: $color-main;
+        color: $color-white;
+        border-radius: 2px;
+        display: inline-block;
+        margin-right: 10px;
+        border: solid 1px $color-main;
+        margin-bottom: 10px;
+        font-size: 12px;
+        
+        &:hover {
+            background-color: $color-main-dark;
+            color: $color-white;
+        }
+    }
+}

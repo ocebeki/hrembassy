@@ -1,0 +1,379 @@
+.moje-konto {
+    margin-bottom: 20px;
+    
+    &__wrapper {
+        display: flex;
+        min-height: 100vh;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: block;
+            min-height: 0;
+        }
+    }
+    
+    &__heading {
+        font-weight: 700;
+        font-size: 18px;
+        
+        @media screen and (max-width: $screen-md) {
+            font-size: 16px;
+        }
+    }
+    
+    &__left {
+        width: 24%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $color-white;
+        border-radius: 2px;
+        position: relative;
+        z-index: 2;
+        
+        @media screen and (max-width: $screen-lg) {
+            padding: 20px;
+        }
+        
+        @media screen and (max-width: $screen-md - 1) {
+            padding: 18px;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 10px;
+        }
+        
+        .woocommerce-MyAccount-navigation {
+            @media screen and (max-width: $screen-sm - 1) {
+                width: 100%;
+            }
+        }
+    }
+    
+    &__left-bottom {
+        @media screen and (max-width: $screen-sm - 1) {
+            display: none;
+        }
+        
+        a {
+            color: $color-main;
+            display: flex;
+            align-items: center;    
+            
+            &:hover {
+                color: $color-main;
+                
+                path {
+                    fill: $color-main;
+                }
+            }
+        }
+        
+        svg {
+            margin-right: 20px;
+        }
+    }
+    
+    &__right {
+        width: 76%;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        
+        @media screen and (max-width: $screen-lg) {
+            padding-left: 20px;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            width: 100%;
+            padding: 0;
+        }
+    }
+    
+    &__right-wrapper {
+        background-color: $color-white;
+        border-radius: 2px;
+        height: 100%;
+        
+        .woocommerce, .moje-konto__content {
+            height: 100%;
+        }
+    }
+    
+    &__navigation {
+//        position: fixed;
+//        top: 148px;
+//        
+//        @media screen and (max-width: $screen-sm - 1) {
+//            position: relative;
+//            top: auto;
+//            display: flex;
+//            justify-content: space-between;
+//        }
+    }
+    
+    &__nav {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: flex;
+        }
+        
+        .moje-konto__nav-link {
+            @media screen and (max-width: $screen-sm - 1) {
+                width: 50%;
+            }
+        }
+    }
+    
+    &__nav-link {
+        color: $color-grey-dark;
+        margin-bottom: 10px;
+        display: block;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            width: 33.333%;
+            text-align: center;
+        }
+        
+        a {
+            color: $color-grey-dark;
+            
+            &:hover {
+                color: $color-accent;
+            }
+        }
+        
+        &:before {
+            content: "";
+            display: inline-block;
+            margin-right: 20px;
+            width: 17px;
+            height: 13px;
+            background: url('img/folder.svg') no-repeat;
+            background-size: contain;
+            position: relative;
+            top: 4px;
+            
+            @media screen and (max-width: $screen-md - 1) {
+                display: none;
+            }
+            
+            @media screen and (max-width: $screen-sm - 1) {
+                display: block;
+                margin: auto;
+                margin-bottom: 10px;
+                width: 17px;
+                height: 18px;
+            }
+        }
+        
+        &.woocommerce-MyAccount-navigation-link--edit-account:before {
+            content: "";
+            display: inline-block;
+            background: url('img/head.svg') no-repeat;
+            background-size: contain;
+            top: 2px;
+            height: 16px;
+            
+            @media screen and (max-width: $screen-md - 1) {
+                display: none;
+            }
+            
+            @media screen and (max-width: $screen-sm - 1) {
+                display: block;
+                height: 18px;
+                width: 14px;
+            }
+        }
+        
+        &.woocommerce-MyAccount-navigation-link--orders:before {
+            content: "";
+            display: inline-block;
+            background: url('img/bag.svg') no-repeat;
+            background-size: contain;
+            top: 4px;
+            height: 18px;
+            
+            @media screen and (max-width: $screen-md - 1) {
+                display: none;
+            }
+            
+            @media screen and (max-width: $screen-sm - 1) {
+                display: block;
+                width: 14px;
+            }
+        }
+    }
+    
+    &__content {
+        
+    }
+    
+    &__social {
+        padding-top: 50px;
+        text-align: right;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 40px 0 20px;
+            text-align: center;
+            padding-bottom: 0;
+        }
+    }
+    
+    &__top-item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__top-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $color-main;
+    }
+    
+    &__name {
+        font-weight: 700;
+        color: $color-accent;
+    }
+    
+    &__top-logout {
+        display: inline-block;
+        margin-left: 10px;
+        color: $color-accent;
+        text-decoration: underline;
+        
+        &:hover {
+            color: $color-main;
+            text-decoration: underline;
+        }
+    }
+    
+    &__witaj {
+        width: 100%;
+        color: $color-main;
+        
+        &--big {
+            font-size: 16px;
+            
+            @media screen and (max-width: $screen-sm - 1) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+    &__dashboard {
+        padding: 60px;
+        background-color: $color-white;
+        border-radius: 2px;
+        color: $color-main;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 30px;  
+            padding-top: 0;
+        }
+    }
+    
+    &__dashboard-part {
+        padding: 10px;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        color: $color-main;
+        
+        &:hover {
+            color: $color-accent;
+            
+            .moje-konto__dashboard-part-right {
+                opacity: 1;
+            }
+        }
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 20px 10px;   
+        }
+    }
+    
+    &__dashboard-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $color-accent;
+        margin-right: 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            flex-shrink: 0;   
+        }
+        
+        path {
+            fill: $color-white;
+        }
+    }
+    
+    &__dashboard-text {
+        font-weight: 700;
+        margin-right: 10px;
+    }
+    
+    &__dashboard-part-left {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__dashboard-part-right {
+        opacity: 0;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: none;   
+        }
+        
+        a {
+            font-weight: 700;
+            color: $color-main;
+            
+            &:hover {
+                color: $color-main-dark;
+            }
+        }
+    }
+    
+    &__log-out {
+        display: none;
+        justify-content: center;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: flex;
+        }
+        
+        &--bottom {
+            margin-top: 20px;
+            margin-left: -10px;
+            margin-right: -10px;
+            padding: 20px;
+            background-color: $color-white;
+        }
+        
+        svg {
+            margin-right: 10px;
+        }
+    }
+}

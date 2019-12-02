@@ -1,0 +1,119 @@
+/*
+Theme Name: sklep
+Author: Jacek Kubas
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+*/
+
+@import "extra/normalize";
+@import "variables";
+@import 'extra/bootstrap';
+@import "base";
+@import "fonts";
+@import "extra/photoswipe";
+@import "extra/slick";
+
+//home
+@import "components/footer";
+@import "components/logo";
+@import "components/header";
+@import "components/menu";
+@import "components/menu-mobile";
+@import "components/section";
+@import "components/btn";
+@import "components/social";
+@import "components/home";
+@import "components/page";
+@import "components/cookie";
+@import "components/hamburger";
+@import "components/mouse";
+@import "components/top";
+@import "components/oferujemy";
+@import "components/home-warsztaty";
+@import "components/klienci";
+@import "components/opinie";
+@import "components/sekcja";
+@import "components/blog";
+@import "components/newsletter";
+@import "components/poznaj";
+@import "components/map";
+@import "components/background-lines";
+@import "components/pagination";
+
+
+// Warsztaty
+@import "components/warsztaty-menu";
+@import "components/warsztaty";
+@import "components/proces";
+@import "components/baner-dedykowane";
+@import "components/trenerzy";
+@import "components/gdzie";
+@import "components/pomoc";
+@import "components/zysk";
+@import "components/program";
+@import "components/autor";
+@import "components/bulb";
+@import "components/jak";
+@import "components/oddzwonimy";
+@import "components/popup";
+@import "components/form";
+
+// hr na deser
+@import "components/prosta";
+@import "components/zostan";
+@import "components/poprzednie";
+@import "components/prelegentem";
+
+// Konsultacje
+@import "components/obszary";
+@import "components/liczyc";
+
+// Blog
+@import "components/categories";
+
+// Single
+@import "components/single";
+
+//sklep
+@import "sklep/woocommerce";
+@import "sklep/kategorie";
+
+// single sklep
+@import "sklep/single-product";
+@import "sklep/product";
+@import "sklep/quantity";
+@import "sklep/variations";
+
+// koszyk
+@import "sklep/koszyk";
+
+// zamowienie checkout
+@import "sklep/zamowienie";
+
+// moje-konto login myaccount-form
+@import "sklep/moje-konto-login";
+
+//moje-konto myaccoutn
+@import "sklep/moje-konto";
+
+//edit-account
+@import "sklep/edit-account";
+@import "sklep/address";
+
+// orders
+@import "sklep/orders";
+@import "sklep/view-order";
+@import "components/pusty";
+
+//animations
+@import "components/animations";
+
+// conference
+@import "conference/conf-header";
+@import "conference/conf-top";
+@import "conference/conf-why";
+@import "conference/conf-hero";
+@import "conference/conf-slider";
+
+////////

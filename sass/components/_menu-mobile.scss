@@ -1,0 +1,45 @@
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    background-color: $color-grey;
+    display: none;
+    
+    @media screen and (max-width: $screen-sm - 1) {
+        display: block;
+    }
+    
+    &__wrapper {
+        min-height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &.active {
+        transform: none;
+        opacity: 1;
+        height: 100vh;
+        overflow: auto;
+        
+        .menu {
+            display: block;
+        }
+        
+        .header--mobile {
+            background-color: transparent;
+            margin-bottom: 15px;
+        }
+    }
+    
+    .menu__item {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    
+    &__social {
+        text-align: center;
+    }
+}

@@ -1,0 +1,109 @@
+.jak {
+    &__wrapper {
+        display: flex;
+        background-color: $color-white;
+        border-radius: 2px;
+        padding: 60px;
+    }
+    
+    &__left {
+        width: 50%;
+        shrink: 0;
+    }
+    
+    &__right {
+        width: 50%;
+        padding-left: 60px;
+        font-weight: 700;
+        color: $color-main;
+        
+    }
+    
+    &__heading {
+        font-size: 24px;
+        font-weight: 700;
+        color: $color-main;
+        margin-bottom: 30px;
+    }
+    
+    &__icons {
+        position: relative;
+        
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 24px;
+            height: 100%;
+            width: 2px;
+            background: linear-gradient(to bottom, #e6e6e9 0%,#e92e7d 36%,#e92e7d 67%,#e6e6e9 67%,#e6e6e9 67%,#e6e6e9 100%); 
+        }
+        
+        &:after {
+            content: '';
+            position: absolute;
+            top: 67%;
+            left: 22px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $color-accent;
+        }
+    }
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        position: relative;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+        @media screen and (max-width: $screen-lg - 1) {
+            margin-bottom: 40px;        
+        }
+    }
+    
+    &__icon {
+        flex-shrink: 0;
+        width: 50px;
+        height: 50px;
+        background-color: $color-accent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 40px;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            margin-right: 20px;
+        }
+    }
+    
+    &__item-text {
+        width: 290px;
+        font-weight: 700;
+        color: $color-main;
+    }
+    
+    &__list {
+        margin-bottom: 50px;
+    }
+    
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    li {
+        &:before {
+            content: '•';
+            color: $color-accent;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+}

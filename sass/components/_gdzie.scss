@@ -1,0 +1,87 @@
+.gdzie {
+    &__wrapper {
+        display: flex;
+        background-color: $color-white;
+        border-radius: 2px;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: block;
+        }
+    }
+    
+    &__left {
+        width: 50%;
+        flex-shrink: 0;
+        overflow: hidden;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            width: 100%;
+        }
+    }
+    
+    &__right {
+        padding: 30px 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            transform: translateY(-50%);
+            width: 0; 
+            height: 0; 
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent; 
+
+            border-right:10px solid $color-white; 
+        }
+        
+        @media screen and (max-width: $screen-lg - 1) {
+            padding-right: 60px;        
+            padding-left: 60px;        
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 30px;
+        }
+    }
+    
+    &__heading {
+        font-size: 34px;
+        font-weight: 700;
+        color: $color-main;
+        margin-bottom: 10px;
+        
+        @media screen and (max-width: $screen-lg - 1) {
+            font-size: 24px;
+        }
+    }
+    
+    &__tekst {
+        margin-bottom: 30px;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            margin-bottom: 10px;
+        }
+    }
+    
+    &__place-name {
+        font-weight: 700;
+        color: $color-main;
+        margin-bottom: 3px;
+    }
+    
+    &__place-adres {
+        margin-bottom: 30px;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            margin-bottom: 10px;
+        }
+    }
+    
+    
+}

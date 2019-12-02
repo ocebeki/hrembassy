@@ -1,0 +1,92 @@
+.warsztaty-menu {
+    margin-bottom: 10px;
+    z-index: 9;
+    
+    &--blog {
+        margin-bottom: 30px;
+    }
+    
+    &__wrapper {
+        background-color: $color-white;
+        border-radius: 2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            justify-content: center;
+            padding: 30px;
+        }
+        
+        img {
+            flex-shrink: 0;
+            
+            &:last-child {
+                transform: scaleX(-1);
+            }
+            
+            @media screen and (max-width: $screen-lg - 1) {
+                max-width: 160px;
+            }
+            
+            @media screen and (max-width: $screen-md - 1) {
+                max-width: 111px;
+            }
+            
+            @media screen and (max-width: $screen-sm - 1) {
+                display: none;    
+            }
+        }
+    }
+    
+    &__part-wrapper {
+        display: flex;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: block;
+        }
+    }
+    
+    &__part {
+        &:first-child {
+            margin-right: 60px;
+            
+            @media screen and (max-width: $screen-sm - 1) {
+                margin-bottom: 20px; 
+            }
+        }
+    }
+    
+    &__link {
+        @extend .oferujemy__heading;
+        cursor: pointer;
+        position: relative;
+        
+        &:hover {
+            color: $color-accent;
+            
+            &:before {
+                color: $color-accent;
+            }
+        }
+        
+        &:before {
+            content: '+';
+            font-size: 20px;
+            font-weight: 700;
+            color: $color-main;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            transition: color 0.3s;
+        }
+        
+        &--active {
+            color: $color-accent;
+            
+            &:before {
+                color: $color-accent;
+            }
+        }
+    }
+}

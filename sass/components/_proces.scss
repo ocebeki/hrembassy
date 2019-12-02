@@ -1,0 +1,65 @@
+.proces {
+    &__wrapper {
+        background-color: $color-white;
+        border-radius: 2px;
+        overflow: hidden;
+        text-align: center;
+        padding: 60px;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 30px;
+        }
+    }
+    
+    &__heading {
+        font-weight: 700;
+        color: $color-main;
+        letter-spacing: 0.3em;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    &__texts {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px 0 2px;
+        
+        @media screen and (max-width: $screen-md) {
+            padding: 0;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: block;
+            text-align: left;
+        }
+    }
+    
+    &__part {
+        width: 150px;
+        font-weight: bold;
+        color: $color-main;
+        flex-shrink: 0;
+        
+        @media screen and (max-width: $screen-lg) {
+            width: 100px;
+            font-size: 12px;
+        }
+        
+        @media screen and (max-width: $screen-md) {
+            width: 100px;
+            font-size: 10px;
+        }
+        
+        @media screen and (max-width: $screen-sm) {
+            width: 100%;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    
+    &__img {
+        @media screen and (max-width: $screen-sm - 1) {
+            display: none;
+        }
+    }
+}

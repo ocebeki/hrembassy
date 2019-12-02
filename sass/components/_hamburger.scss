@@ -1,0 +1,48 @@
+.hamburger {
+    width: 29px;
+    height: 24px;
+    margin-left: 20px;
+    padding-right: 1px;
+    overflow: hidden;
+    cursor: pointer;
+    
+    &__line {
+        width: 100%;
+        height: 3px;
+        background-color: $color-main;
+        margin-bottom: 7px;
+        border-radius: 2px;
+        display: block;
+        transition: transform 0.3s;
+        transform-origin: right;
+        
+        &:nth-child(1) {
+            
+        }
+        
+        &:nth-child(2) {
+            width: 80%;
+            margin-left: auto;
+        }
+        
+        &:nth-child(3) {
+            margin-bottom: 0;
+        }
+    }
+    
+    &.active {
+        .hamburger__line {
+            &:nth-child(1) {
+                transform: rotate(-45deg);
+            }
+
+            &:nth-child(2) {
+                transform: translateX(110%);
+            }
+
+            &:nth-child(3) {
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

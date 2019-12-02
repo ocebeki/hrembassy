@@ -1,0 +1,85 @@
+.prelegentem {
+    &__form-wrapper {
+        display: flex;
+    }
+    
+    input {
+        border-radius: 2px 0 0 2px;
+        border-color: $color-white;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            width: 100%;
+        }
+    }
+    
+    [type="submit"] {
+        border-radius: 0 2px 2px 0;
+        background-color: $color-accent;
+        border-color: $color-accent;
+        color: $color-white;
+        transition: all 0.3s;
+        
+        &:hover {
+            color: $color-main;
+            background-color: $color-white;
+            border-color: $color-white;
+            border-left: solid 1px $color-main;
+        }
+    }
+    
+    .wpcf7-acceptance {
+        a {
+            color: $color-main-light;
+            text-decoration: underline;
+            
+            &:hover {
+                color: $color-white;
+            }
+        }
+        
+        label {
+            display: flex;
+            position: relative;
+            background-color: transparent;
+            top: 0;
+            left: 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 0;
+            
+            span {
+                padding-left: 5px;
+                font-size: 12px;
+                line-height: 1.4;
+                color: #a9a4b6;
+                
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 1px;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 2px;
+                    border: solid 1px $color-accent;
+                }
+            }
+        }
+        
+        input[type="checkbox"] {
+            opacity: 0;
+            width: auto;
+            
+            &:checked + span:before {
+                background-color: $color-accent;
+                border-color: $color-accent;
+                content: "✓";
+                color: $color-white;
+                font-size: 11px;
+                font-weight: 700;
+                text-align: center;
+                line-height: 11px;
+            }
+        }
+    }
+}

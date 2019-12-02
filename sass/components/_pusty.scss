@@ -1,0 +1,20 @@
+.pusty {
+    text-align: center;
+    color: $color-main;
+    
+    @media screen and (max-width: $screen-sm - 1) {
+        padding: 30px 0;
+    }
+    
+    &__text {
+        margin-bottom: 30px;
+    }
+    
+    &__img {
+        margin-bottom: 30px;
+    }
+    
+    .section__heading {
+        margin-bottom: 10px;
+    }
+}

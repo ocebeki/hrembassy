@@ -1,0 +1,204 @@
+.footer {
+    position: relative;
+    z-index: 2;
+    background-color: $color-grey;
+    line-height: 2;
+    color: $color-main;
+    width: 1600px;
+    max-width: 100%;
+    margin: auto;
+    
+    @media screen and (max-width: $screen-sm - 1) {
+        text-align: center;
+    }
+        
+    a {
+        color: $color-main;
+
+        &:hover {
+            color: $color-accent;
+        }
+    }
+    
+    &--small {
+        background-color: $color-main-dark;
+        color: $color-main-light;
+        
+        a {
+            color: $color-main-light;
+            
+            &:hover {
+                color: $color-white;
+            }
+        }
+    }
+    
+    &__wrapper {
+        background-color: $color-white;
+        border-radius: 2px;
+        overflow: hidden;
+        padding: 80px 60px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            padding: 50px 40px;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 30px;
+            display: block;
+        }
+    }
+    
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 17px;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            margin-bottom: 35px;   
+        }
+    }
+    
+    &__logo {
+        width: 228px;
+        margin-bottom: 20px;
+        
+        @media screen and (max-width: $screen-md) {
+            width: 150px;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            margin: auto;
+        }
+    }
+    
+    &__menu {
+        a {
+            color: $color-main;
+            
+            &:hover {
+                color: $color-accent;
+            }
+        }
+    }
+    
+    &__social {
+        text-align: right;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            text-align: center;   
+        }
+    }
+    
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-size: 12px;
+        padding: 0 60px;
+        position: relative;
+        z-index: 2;
+        
+        @media screen and (max-width: $screen-lg) {
+            font-size: 10px;
+        }
+        
+        @media screen and (max-width: $screen-md) {
+            font-size: 8px;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: block;
+            padding: 0;
+            text-align: center;
+        }
+        
+        span {
+            @media screen and (max-width: $screen-sm - 1) {
+                display: block;
+            }
+        }
+    }
+    
+    &__copyright {
+        margin-bottom: 20px;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            margin-bottom: 10px;   
+        }
+    }
+    
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 160px;
+        
+        @media screen and (max-width: $screen-lg - 1) {
+            margin-right: 90px;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+    }
+    
+    &__left-wrapper {
+        display: flex;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: block;
+        }
+    }
+    
+    &__middle {
+        display: flex;
+        width: 305px;
+        justify-content: space-between;
+        
+        @media screen and (max-width: $screen-lg - 1) {
+            width: 200px;
+        }
+        
+        @media screen and (max-width: $screen-md - 1) {
+            width: 200px;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            margin-bottom: 20px;
+            display: block;
+            width: auto;
+        }
+    }
+    
+    &__strona {
+        @media screen and (max-width: $screen-sm - 1) {
+            margin-bottom: 20px;
+        }
+    }
+    
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .menu__cart path {
+        fill: $color-main !important;
+    }
+    
+    .logo_h {
+        fill: $color-main !important;
+    }
+
+    .logo_r {
+        fill: $color-main !important;
+    }
+}

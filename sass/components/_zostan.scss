@@ -1,0 +1,76 @@
+.zostan {
+    &__wrapper {
+        background-color: $color-main;
+        border-radius: 2px;
+        overflow: hidden;
+        display: flex;
+        position: relative;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: block;
+        }
+        
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background-color: $color-grey;
+            
+            @media screen and (max-width: $screen-sm - 1) {
+                display: none;    
+            }
+        }
+    }
+    
+    &__left {
+        width: 50%;
+        flex-shrink: 0;
+        padding: 30px 30px 30px 60px;
+        display: flex;
+        align-items: center;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            width: 100%;
+            padding: 30px;
+        }
+        
+        a {
+            color: $color-white;
+            font-weight: 700;
+            
+            &:hover {
+                color: $color-accent;
+            }
+        }
+    }
+    
+    &__right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0 60px;
+        width: 50%;
+        position: relative;
+        z-index: 2;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            width: 100%;
+        }
+    }
+    
+    &__heading {
+        font-size: 34px;
+        font-weight: 700;
+        color: $color-white;
+        margin-bottom: 10px;
+    }
+    
+    &__tekst {
+        color: $color-white;
+        opacity: 0.5;
+        margin-bottom: 20px;
+    }
+}

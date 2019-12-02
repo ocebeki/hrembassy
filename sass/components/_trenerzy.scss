@@ -1,0 +1,105 @@
+.trenerzy {
+    &__wrapper {
+        background-color: $color-white;
+        border-radius: 2px;
+        padding: 60px 0 90px;
+    }
+    
+    &__heading {
+        @extend .proces__heading;
+    }
+    
+    &__slider-wrapper {
+        position: relative;
+        margin-bottom: 60px;
+        
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $color-grey-line;
+        }
+        
+        .slick-center {
+            .trenerzy__head {
+                background-color: $color-accent;
+            }
+        }
+    }
+    
+    &__arrow {
+        @extend .top__arrow;
+        background-color: $color-accent;
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+        
+        &--next {
+            left: auto;
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+    }
+    
+    &__head {
+        width: 70px;
+        height: 70px;
+        margin: auto;
+        border-radius: 50%;
+        border: solid 1px $color-grey-line;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        transition: background-color 0.5s;
+        background-color: $color-white;
+        cursor: pointer;
+        overflow: hidden;
+        
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+        
+        img {
+            max-width: 100%;
+            transition: transform 0.5s;
+        }
+    }
+    
+    &__texts-slider {
+        text-align: center;
+        width: 940px;
+        max-width: 70%;
+        margin: auto;
+    }
+    
+    &__name {
+        font-size: 21px;
+        font-weight: 700;
+        color: $color-main;
+        margin-bottom: 20px;
+    }
+    
+    &__tekst {
+        margin-bottom: 20px;
+    }
+    
+    &__social {
+        path {
+            fill: $color-main;
+            transition: fill 0.3s;
+        }
+        
+        a:hover {
+            path {
+                fill: $color-accent;
+            }
+        }
+    }
+}

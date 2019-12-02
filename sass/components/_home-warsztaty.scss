@@ -1,0 +1,133 @@
+.home-warsztaty {
+    &__wrapper {
+        margin: 0 -10px;
+        display: flex;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            flex-wrap: wrap;        
+        }
+    }
+    
+    &__left {
+        width: 33.333%;
+        padding: 10px;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            width: 100%;
+            margin-bottom: 0;
+        }
+    }
+    
+    &__left-wrapper {
+        background-color: $color-white;
+        border-radius: 2px;
+        height: 100%;
+        position: relative;
+        
+        h1 {
+            color: $color-main;
+        }
+    }
+    
+    &__text-wrapper {
+        padding: 60px;
+        position: relative;
+        z-index: 2;
+        background-color: $color-white;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            padding: 50px;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 30px;
+        }
+    }
+    
+    &__text {
+        margin-bottom: 20px;
+    }
+    
+    &__left-img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            position: static;
+            margin-top: 10px;
+        }
+    }
+    
+    &__right {
+        width: 66.666%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            width: 100%;
+        }
+    }
+    
+    &__item {
+        padding: 10px;
+        display: block;
+        width: 50%;
+        
+        @media screen and (max-width: 590px) {
+            width: 100%;
+        }
+    }
+    
+    &__item-wrapper {
+        background-color: $color-white;
+        border-radius: 2px;
+        padding: 30px;
+        height: 100%;
+        
+        &:hover {
+            .home-warsztaty__btn {
+                background-color: $color-accent;
+                border-color: $color-accent;
+            }
+            
+            .home-warsztaty__price {
+                color: $color-accent;
+            }
+        }
+    }
+    
+    &__img {
+        margin-bottom: 20px;
+        height: 186px;
+    }
+    
+    &__heading {
+        font-size: 18px;
+        font-weight: 700;
+        color: $color-main;
+        margin-bottom: 10px;
+    }
+    
+    &__price {
+        font-weight: 700;
+        color: $color-main;
+        font-size: 18px;
+        margin-bottom: 10px;
+        transition: color 0.3s;
+    }
+    
+    &__price-text {
+        font-size: 14px;
+    }
+    
+    &__meta {
+        margin-bottom: 10px;
+        font-szie: 12px;
+    }
+    
+    &__btn {
+        font-size: 12px;
+    }
+}

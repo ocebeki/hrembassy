@@ -1,0 +1,78 @@
+.baner-dedykowane {
+    &__wrapper {
+        background-color: $color-main;
+        color: $color-white;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 2px;
+        position: relative;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background-color: $color-grey;
+            
+            @media screen and (max-width: $screen-sm - 1) {
+                display: none;    
+            }
+        }
+    }
+    
+    &__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        z-index: 2;
+        padding: 0 10px;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: none;
+        }
+    }
+    
+    &__middle {
+        text-align: center;
+        padding-top: 80px;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            padding-bottom: 30px;
+            width: 61%;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding-top: 30px;
+            width: 90%;
+        }
+    }
+    
+    &__heading {
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            font-size: 24px;
+        }
+    }
+    
+    &__tekst {
+        opacity: 0.5;
+        width: 480px;
+        margin: auto;
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        &:hover {
+            background-color: $color-white;
+            border-color: $color-white;
+            color: $color-main;
+        }
+    }
+}

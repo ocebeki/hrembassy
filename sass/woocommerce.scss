@@ -1,0 +1,45 @@
+/*
+Theme Name: blank
+
+WooCommerce styles override
+*/
+
+/**
+ * WooCommerce color variables
+ */
+
+@import "variables";
+
+$woocommerce__color-error: $color-main;
+$woocommerce__color-success: $color-accent;
+$woocommerce__color-info: #3D9CD2;
+
+/**
+ * Shop tables
+ */
+@import "shop/tables";
+
+/**
+ * Products
+ */
+@import "shop/products";
+
+/**
+ * Single product
+ */
+@import "shop/single-product";
+
+/**
+ * Checkout
+ */
+@import "shop/checkout";
+
+/**
+ * General WooCommerce components
+ */
+@import "shop/components";
+
+/**
+ * WooCommerce widgets
+ */
+@import "shop/widgets";

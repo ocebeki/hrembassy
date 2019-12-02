@@ -1,0 +1,219 @@
+.koszyk {
+    background-color: $color-grey;
+    color: $color-main;
+    
+    &__item {
+        color: $color-main;
+        
+        &:hover {
+            background-color: $color-grey;
+        }
+        
+        a {
+            color: $color-main;
+            transition: color  0.3s;
+            
+            &:hover {
+                color: $color-accent;
+            }
+        }
+    }
+    
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 60px;
+        color: $color-main;
+        text-align: center;
+        border-bottom: solid 1px $color-grey-line;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: none;   
+        }
+        
+        & > * {
+            width: 33.333%;
+        }
+    }
+    
+    &__top-circle {
+        width: 40px;
+        height: 40px;
+        border: solid 1px $color-accent;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            width: 30px;
+            height: 30px;
+        }
+        
+        &--active {
+            background-color: $color-accent;
+        }
+    }
+    
+    &__top-close {
+        svg {
+            width: 40px;
+            height: 40px;
+            
+            @media screen and (max-width: $screen-md - 1) {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    
+    &__content {
+        background-color: $color-white;
+        border-radius: 2px;    
+        position: relative;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            border-radius: 0;
+            margin: 0 -10px;
+        }
+    }
+    
+    &__heading {
+        font-weight: 700;
+        
+        @media screen and (max-width: $screen-lg) {
+            font-size: 14px;
+            padding-left: 30px;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding-left: 10px;
+        }
+        
+        &--active {
+            color: $color-accent;
+        }
+    }
+    
+    &__remove {
+        position: relative;
+        
+        &:before {
+            content: "▼";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 2;
+            color: $color-main;
+        }
+        
+        &:after {
+            content: "usuń produkt z koszyka";
+            position: absolute;
+            bottom: calc(100% + 11px);
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+            font-size: 12px;
+            background-color: $color-main;
+            border-radius: 6px;
+            white-space: nowrap;
+            color: $color-white;
+            font-weight: 400;
+            display: none;
+        }
+        
+        &:hover {
+            &:before, &:after {
+                display: block;
+            }
+            
+            path {
+                fill: $color-main;
+            }
+        }
+    }
+    
+    &__category {
+        font-size: 12px;
+        color: $color-main;
+        font-weight: 400;
+        
+        @media screen and (max-width: $screen-lg) {
+            font-size: 10px;
+        }
+        
+        @media screen and (max-width: $screen-md) {
+            font-size: 8px;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            font-size: 10px;
+        }
+    }
+    
+    &__back {
+        color: $color-grey-dark; 
+        display: flex;
+        align-items: center;
+    
+        svg {
+            margin-right: 5px;
+            margin-top: -2px;
+            
+            @media screen and (max-width: $screen-lg - 1) {
+                width: 15px;    
+            }
+            
+            @media screen and (max-width: $screen-md - 1) {
+                width: 12px;
+            }
+            
+            @media screen and (max-width: $screen-sm - 1) {
+                width: 13px;
+            }
+        }
+        
+        &:hover {
+            path {
+                
+                fill: $color-main;
+            }
+        }
+    }
+    
+    &__empty-wrapper {
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    &__empty-heading {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: $color-main;
+    }
+    
+    &__empty-text {
+        margin-bottom: 40px;
+        color: $color-main;
+    }
+    
+    &__empty-img {
+        max-width: 90%;
+        margin-bottom: 50px;
+    }
+    
+    &__shipping-amount {
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,91 @@
+.oferujemy {
+    &__wrapper {
+        @include clearfix;
+        background-color: $color-white;
+        border-radius: 2px;
+        padding: 100px 0;
+        
+        @media screen and (max-width: $screen-lg - 1) {
+            padding: 30px;        
+        }
+    }
+    
+    &__item {
+        padding: 0 15px;
+        display: block;
+        position: relative;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 0;
+            margin-bottom: 30px;
+            max-width: 300px;
+        }
+        
+        &--heading {
+            padding-top: 10px;
+            padding-left: 40px;
+            color: $color-main;
+            
+            @media screen and (max-width: $screen-md - 1) {
+                padding-left: 15px;
+                margin-bottom: 30px;
+            }
+            
+            @media screen and (max-width: $screen-sm - 1) {
+                padding-left: 0;
+            }
+            
+            &:before {
+                display: none;
+            }
+        }
+        
+        &:before {
+            content: '+';
+            font-size: 20px;
+            font-weight: 700;
+            color: $color-main;
+            position: absolute;
+            top: -20px;
+            left: 0;
+            transition: color 0.3s;
+            
+            @media screen and (max-width: $screen-sm - 1) {
+                left: -15px;
+            }
+        }
+        
+        &:hover {
+            .oferujemy__heading, .oferujemy__more {
+                color: $color-accent;
+            }
+            
+            .oferujemy__text {
+                color: $color-black;
+            }
+            
+            &:before {
+                color: $color-accent;
+            }
+        }
+    }
+    
+    &__heading {
+        font-size: 18px;
+        font-weight: 700;
+        color: $color-main;
+        margin-bottom: 10px;
+        transition: color 0.3s;
+    }
+    
+    &__text {
+        margin-bottom: 10px;
+    }
+    
+    &__more {
+        font-size: 12px;
+        font-weight: 500;
+        color: $color-main;
+        transition: color 0.3s;
+    }
+}

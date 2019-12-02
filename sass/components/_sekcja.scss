@@ -1,0 +1,125 @@
+.sekcja {
+    &__wrapper {
+        background-color: $color-white;
+        border-radius: 2px;
+        display: flex;
+        
+        @media screen and (max-width: $screen-md - 1) {
+            flex-wrap: wrap;
+        }
+    }
+    
+    &__left {
+        padding: 60px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        @media screen and (max-width: $screen-lg - 1) {
+            width: 60%;        
+        }
+        
+        @media screen and (max-width: $screen-md - 1) {
+            width: 100%;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            padding: 30px;
+        }
+    }
+    
+    &__right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        
+        @media screen and (max-width: $screen-lg - 1) {
+            width: 40%;        
+        }
+        
+        @media screen and (max-width: $screen-md - 1) {
+            width: 100%;
+        }
+    }
+    
+    &__preheading {
+        font-weight: 700;
+        color: $color-accent;
+        margin-bottom: 10px;
+    }
+    
+    &__heading {
+        font-size: 34px;
+        font-weight: 700;
+        color: $color-main;
+        margin-bottom: 20px;
+    }
+    
+    &__text {
+        margin-bottom: 35px;
+    }
+    
+    &__icons-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    &__meta {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    &__meta-item {
+        display: flex;
+        margin-right: 10px;
+        color: $color-main;
+        
+        @media screen and (max-width: $screen-sm - 1) {
+            display: block;
+        }
+    }
+    
+    &__icon {
+        background-color: $color-accent;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        margin-right: 20px;
+        
+        svg {
+            min-width: 20px;
+            height: auto;
+        }
+        
+        path {
+            fill: $color-white;
+        }
+        
+        &--small {
+            svg {
+                margin-right: 5px;
+            }
+            
+            path {
+                fill: $color-accent;
+            }
+        }
+    }
+    
+    &__icon-heading {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 3px;
+        color: $color-main;
+    }
+}

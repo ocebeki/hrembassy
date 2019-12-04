@@ -25,27 +25,27 @@
                             y: "-50px",
                             x: "-50px"
                         }, {
-                            y: 0,
-                            x: 0
-                        });
+                                y: 0,
+                                x: 0
+                            });
                         TweenLite.fromTo(paragraph, 1, {
                             x: "-50px"
                         }, {
-                            x: 0
-                        });
+                                x: 0
+                            });
                     })
                     TweenLite.fromTo(currentHeading, 1, {
                         y: 0,
                         x: 0
                     }, {
-                        y: "-50px",
-                        x: "-50px"
-                    });
+                            y: "-50px",
+                            x: "-50px"
+                        });
                     TweenLite.fromTo(currentParagraph, 1, {
                         x: 0
                     }, {
-                        x: "-50px"
-                    });
+                            x: "-50px"
+                        });
                 }
 
                 function nextS() {
@@ -57,28 +57,29 @@
                             y: "-50px",
                             x: "50px"
                         }, {
-                            y: 0,
-                            x: 0
-                        });
+                                y: 0,
+                                x: 0
+                            });
                         TweenLite.fromTo(paragraph, 1, {
                             x: "50px"
                         }, {
-                            x: 0
-                        });
+                                x: 0
+                            });
                     })
                     TweenLite.fromTo(currentHeading, 1, {
                         y: 0,
                         x: 0
                     }, {
-                        y: "-50px",
-                        x: "-50px"
-                    });
+                            y: "-50px",
+                            x: "-50px"
+                        });
                     TweenLite.fromTo(currentParagraph, 1, {
                         x: 0
                     }, {
-                        x: "-50px"
-                    });
+                            x: "-50px"
+                        });
                 }
+
 
                 if (currentSlide == slick.$slides.length - 1 && nextSlide == 0) {
                     nextS();
@@ -106,7 +107,7 @@
                         settings: {
                             slidesToShow: 3,
                         }
-                },
+                    },
                     {
                         breakpoint: 768,
                         settings: {
@@ -115,8 +116,8 @@
                             nextArrow: '',
                             dots: true
                         }
-                },
-              ]
+                    },
+                ]
             });
         }
 
@@ -134,8 +135,8 @@
                         settings: {
                             adaptiveHeight: true
                         }
-                }
-              ]
+                    }
+                ]
             });
 
 
@@ -155,21 +156,21 @@
                         settings: {
                             slidesToShow: 3,
                         }
-                },
+                    },
                     {
                         breakpoint: 768,
                         settings: {
                             slidesToShow: 2,
                         }
-                },
+                    },
                     {
                         breakpoint: 480,
                         settings: {
                             slidesToShow: 1,
                             adaptiveHeight: true
                         }
-                }
-              ]
+                    }
+                ]
             });
 
             $('[data-slider="trenerzy-texts"]').slick({
@@ -183,8 +184,8 @@
                         settings: {
                             adaptiveHeight: true
                         }
-                }
-              ]
+                    }
+                ]
             });
 
             $('.trenerzy__slider-wrapper').each(function () {
@@ -219,12 +220,39 @@
                 }
             })
         }
+        function prelegenci() {
+            $('[data-slider="prelegenci"]').slick({
+                prevArrow: '[data-slider="prelegenciPrev"]',
+                nextArrow: '[data-slider="prelegenciNext"]',
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            prevArrow: '',
+                            nextArrow: '',
+                            dots: true
+                        }
+                    },
+                ]
+            });
+        }
 
         window.addEventListener('load', function () {
             slider();
             klienci();
             opinie();
             trenerzy();
+            prelegenci();
+
         });
     })
 }(jQuery));

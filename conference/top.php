@@ -1,16 +1,15 @@
 <section class="section conf-top">
+    <img class="conf-top__bc" src="<?php echo get_template_directory_uri(); ?>/conference/img/top-bc.jpg" />
     <div class="container-fluid">
         <div class="conf-top__wrapper">
             <div class="conf-top__content-top">
                 <h1 class="conf-top__title">Najbardziej interaktywna konferencja HR w Polsce</h1>
                 <p class="conf-top__subtitle">27 LUTEGO, 2020 / WARSZAWA, MULTIKINO ZŁOTE TARASY</p>
-                <a class="btn">Kup biltet</a>
+                <a class="btn conf-top__btn" id="trigger">Kup biltet</a>
             </div>
             <div class="conf-top__content-bottom">
                 <div class="conf-top__media">
-                    <div class="footer__social">
-                        <?php get_template_part('template-parts/social'); ?>
-                    </div>
+                    <?php get_template_part('template-parts/social'); ?>
                 </div>
                 <div class="conf-top__counting-down">
                     <p class="conf-top__counting-down-title">Do zmiany cen biletów zostało :</p>
@@ -30,8 +29,6 @@
                     </div>
                 </div>
                 <div class="conf-top__lang">
-                    <a class="conf-top__lang-item">PL</a>
-                    <a class="conf-top__lang-item">EN</a>
                 </div>
             </div>
         </div>

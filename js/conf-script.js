@@ -1,5 +1,10 @@
 window.addEventListener("load", function () {
 
+    jQuery('.conf-header__burger').on("click", function () {
+        jQuery('.conf-header__menu').toggleClass('conf-header__menu--active')
+        jQuery('.conf-header').toggleClass('conf-header--mobile')
+    })
+
     const daysWrapper = document.querySelector('.conf-top__counting-down-day');
     hoursWrapper = document.querySelector('.conf-top__counting-down-hour');
     minWrapper = document.querySelector('.conf-top__counting-down-min');
@@ -55,5 +60,8 @@ window.addEventListener("load", function () {
         });
     }
 
-
+    var controller = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({ triggerElement: "#trigger" })
+        .setClassToggle(".conf-header", "conf-header--fixed")
+        .addTo(controller);
 })

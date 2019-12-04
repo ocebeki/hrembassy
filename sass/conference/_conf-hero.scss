@@ -1,7 +1,17 @@
 .conf-hero {
-    background: $color-black;
+    position: relative;
     color: $color-white;
     display: flex;
+
+    &__bc {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
 
     &__wrapper {
         display: flex;
@@ -13,13 +23,20 @@
     }
 
     &__title {
-        width: 400px;
+        width: 640px;
         text-align: center;
+        font-size: 34px;
+        font-weight: 700;
     }
 
     &__btn {
         background: #37285f;
         border: none;
+        width: 155px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:hover {
             cursor: pointer;

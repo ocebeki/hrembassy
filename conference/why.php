@@ -7,7 +7,7 @@
                     necessitatibus expedita error aut? Error reprehenderit quasi totam doloribus natus tempore suscipit!
                     Quis voluptatibus exercitationem magni similique laborum labore nam quibusdam velit, mollitia eaque
                     provident a commodi in!</p>
-                <a class="conf-why__btn btn">Kup bilet</a>
+                <a class="conf-btn">Kup bilet</a>
             </div>
             <div class="conf-why__content-bottom">
                 <div class="conf-why__item">

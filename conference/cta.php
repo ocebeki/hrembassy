@@ -2,11 +2,11 @@
     <div class="container">
         <div class="conf-cta__wrapper">
             <div class="conf-cta__header">
-                <div class="conf-cta__column conf-cta__column-top">
+                <div class="conf-cta__column-sm conf-cta__column-top">
                     <p class="conf-cta__topic">Ścieżka tematyczna</p>
                     <div class="conf-cta__triangle"></div>
                 </div>
-                <div class="conf-cta__column conf-cta__column-top">
+                <div class="conf-cta__column-sm conf-cta__column-top">
                     <p class="conf-cta__time">Godzina</p>
                     <div class="conf-cta__triangle"></div>
                 </div>
@@ -15,227 +15,267 @@
                     <div class="conf-cta__triangle"></div>
                 </div>
             </div>
-            <div class="conf-cta__content">
+            <div class="conf-cta__content-wrapper">
                 <div class="conf-cta__item">
-                    <div class="conf-cta__column-left">
-                        <h2 class="conf-cta__course">Employer
-                            Branding </h2>
-                        <img class="conf-cta__icon"
+                    <div class="conf-cta__left">
+                        <p class="conf-cta__left-name">Employer
+                            Branding</p>
+                        <img class="conf-cta__left-icon"
                             src="<?php echo get_template_directory_uri(); ?>/conference/img/ctaicons01.jpg" />
-                        <a class="conf-cta__btn">Kup bilet <?php get_template_part('img/svg/arrow.svg'); ?></a>
+                        <a class="conf-cta__btn">KUP BILET <?php get_template_part('img/svg/arrow.svg'); ?></a>
                     </div>
-                    <div class="conf-cta__column-right">
-                        <div class="conf-cta__column-time">
-                            <p class="conf-cta__time">8:00 - 9:00</p>
-                            <p class="conf-cta__time">9:00 - 10:00</p>
-                            <p class="conf-cta__time">10:00 - 10:15</p>
+                    <div class="conf-cta__right">
+                        <div class="conf-cta__row">
+                            <p class="conf-cta__item-time">8:00 - 9:00</p>
+                            <div class="conf-cta__item-box">
+                                <p class="conf-cta__item-text">
+                                    <span class="semi-bold">Pięć wieków później zaczął być używany przemyśle
+                                        elektronicznym,
+                                        pozostając praktycznie
+                                    </span>
+                                    niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
+                                    Letrasetu,
+                                </p>
+                                <div class="conf-cta__item-person-wrapper">
+                                    <img class="conf-cta__item-img"
+                                        src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
+                                    <div class="conf-cta__item-name-wrapper">
+                                        <p class="conf-cta__item-name semi-bold">Jadwiga Katarzyna</p>
+                                        <p class="conf-cta__item-name-bottom">Rekrutacja i sourcing</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="conf-cta__column-lg">
-                            <p class="conf-cta__text">
-                                <span class="bold">Pięć wieków później zaczął być używany przemyśle elektronicznym,
-                                    pozostając praktycznie
-                                </span>
-                                niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
-                                Letrasetu,
-                            </p>
-                            <div class="conf-cta__person">
-                                <img class="conf-cta__img"
-                                    src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
-                                <div class="conf-cta__caption">
-                                    <p class="conf-cta__name bold">Jadwiga Katarzyna</p>
-                                    <p class="conf-cta__name-bottom">Rekrutacja i sourcing</p>
-                                </div>
-
-                            </div>
-                            <p class="conf-cta__text">
-                                <span class="bold">Pięć wieków później zaczął być używany przemyśle elektronicznym,
-                                    pozostając praktycznie
-                                </span>
-                                niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
-                                Letrasetu,
-                            </p>
-                            <div class="conf-cta__person">
-                                <img class="conf-cta__img"
-                                    src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
-                                <div class="conf-cta__caption">
-                                    <p class="conf-cta__name bold">Jadwiga Katarzyna</p>
-                                    <p class="conf-cta__name-bottom">Rekrutacja i sourcing</p>
+                        <div class="conf-cta__row">
+                            <p class="conf-cta__item-time">9:00 - 10:00</p>
+                            <div class="conf-cta__item-box">
+                                <p class="conf-cta__item-text">
+                                    <span class="semi-bold">Pięć wieków później zaczął być używany przemyśle
+                                        elektronicznym,
+                                        pozostając praktycznie
+                                    </span>
+                                    niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
+                                    Letrasetu,
+                                </p>
+                                <div class="conf-cta__item-person-wrapper">
+                                    <img class="conf-cta__item-img"
+                                        src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
+                                    <div class="conf-cta__item-name-wrapper">
+                                        <p class="conf-cta__item-name semi-bold">Jadwiga Katarzyna</p>
+                                        <p class="conf-cta__item-name-bottom">Rekrutacja i sourcing</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="conf-cta__person">
-                                <img class="conf-cta__img"
-                                    src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
-                                <div class="conf-cta__caption">
-                                    <p class="conf-cta__name bold">Jadwiga Katarzyna</p>
-                                    <p class="conf-cta__name-bottom">Rekrutacja i sourcing</p>
+                        </div>
+                        <div class="conf-cta__row">
+                            <p class="conf-cta__item-time">10:00 - 10:15</p>
+                            <div class="conf-cta__item-box">
+                                <div class="conf-cta__item-person-wrapper">
+                                    <img class="conf-cta__item-img"
+                                        src="<?php echo get_template_directory_uri(); ?>/conference/img/coffe.jpg" />
+                                    <div class="conf-cta__item-name-wrapper">
+                                        <p class="conf-cta__item-name semi-bold">Przerwa kawowa</p>
+                                        <p class="conf-cta__item-name-bottom">Kawa i smakołyki</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="conf-cta__item">
-                    <div class="conf-cta__column-left">
-                        <h2 class="conf-cta__name">Employer
-                            Branding </h2>
-                        <img class="conf-cta__icon"
+                    <div class="conf-cta__left">
+                        <p class="conf-cta__left-name">HR Tech</p>
+                        <img class="conf-cta__left-icon"
                             src="<?php echo get_template_directory_uri(); ?>/conference/img/ctaicons02.jpg" />
-                        <a class="conf-cta__btn">Kup bilet <?php get_template_part('img/svg/arrow.svg'); ?></a>
+                        <a class="conf-cta__btn">KUP BILET <?php get_template_part('img/svg/arrow.svg'); ?></a>
                     </div>
-                    <div class="conf-cta__column-right">
-                        <div class="conf-cta__column-time">
-                            <p class="conf-cta__time">8:00 - 9:00</p>
-                            <p class="conf-cta__time">9:00 - 10:00</p>
-                            <p class="conf-cta__time">10:00 - 10:15</p>
+                    <div class="conf-cta__right">
+                        <div class="conf-cta__row">
+                            <p class="conf-cta__item-time">11:45 - 12:45</p>
+                            <div class="conf-cta__item-box">
+                                <p class="conf-cta__item-text">
+                                    <span class="semi-bold">Pięć wieków później zaczął być używany przemyśle
+                                        elektronicznym,
+                                        pozostając praktycznie
+                                    </span>
+                                    niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
+                                    Letrasetu,
+                                </p>
+                                <div class="conf-cta__item-person-wrapper">
+                                    <img class="conf-cta__item-img"
+                                        src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
+                                    <div class="conf-cta__item-name-wrapper">
+                                        <p class="conf-cta__item-name semi-bold">Jadwiga Katarzyna</p>
+                                        <p class="conf-cta__item-name-bottom">Rekrutacja i sourcing</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="conf-cta__column-lg">
-                            <p class="conf-cta__text">
-                                <span class="bold">Pięć wieków później zaczął być używany przemyśle elektronicznym,
-                                    pozostając praktycznie
-                                </span>
-                                niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
-                                Letrasetu,
-                            </p>
-                            <div class="conf-cta__person">
-                                <img class="conf-cta__img"
-                                    src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
-                                <div class="conf-cta__caption">
-                                    <p class="conf-cta__name bold">Jadwiga Katarzyna</p>
-                                    <p class="conf-cta__name-bottom">Rekrutacja i sourcing</p>
+                        <div class="conf-cta__row">
+                            <p class="conf-cta__item-time">12:45 - 13:30</p>
+                            <div class="conf-cta__item-box">
+                                <div class="conf-cta__item-person-wrapper">
+                                    <img class="conf-cta__item-img"
+                                        src="<?php echo get_template_directory_uri(); ?>/conference/img/lunch.jpg" />
+                                    <div class="conf-cta__item-name-wrapper">
+                                        <p class="conf-cta__item-name semi-bold">Lunch</p>
+                                        <p class="conf-cta__item-name-bottom">Kawa i smakołyki</p>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="conf-cta__row">
+                            <p class="conf-cta__item-time">9:00 - 10:00</p>
+                            <div class="conf-cta__item-box">
+                                <p class="conf-cta__item-text">
+                                    <span class="semi-bold">Pięć wieków później zaczął być używany przemyśle
+                                        elektronicznym,
+                                        pozostając praktycznie
+                                    </span>
+                                    niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
+                                    Letrasetu,
+                                </p>
+                                <div class="conf-cta__item-person-wrapper">
+                                    <img class="conf-cta__item-img"
+                                        src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
+                                    <div class="conf-cta__item-name-wrapper">
+                                        <p class="conf-cta__item-name semi-bold">Jadwiga Katarzyna</p>
+                                        <p class="conf-cta__item-name-bottom">Rekrutacja i sourcing</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                            </div>
-                            <p class="conf-cta__text">
-                                <span class="bold">Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
-                                    przemyśle
-                                    poligraficznym.</span>
-                                Został po raz pierwszy użyty w XV w. przez nieznanego drukarza.
-                            </p>
-                            <div class="conf-cta__person">
-                                <img class="conf-cta__img"
-                                    src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
-                                <div class="conf-cta__caption">
-                                    <p class="conf-cta__name bold">Jadwiga Katarzyna</p>
-                                    <p class="conf-cta__name-bottom">Rekrutacja i sourcing</p>
-                                </div>
-                            </div>
-                            <div class="conf-cta__person">
-                                <img class="conf-cta__img"
-                                    src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
-                                <div class="conf-cta__caption">
-                                    <p class="conf-cta__name bold">Jadwiga Katarzyna</p>
-                                    <p class="conf-cta__name-bottom">Rekrutacja i sourcing</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="conf-cta__item">
-                    <div class="conf-cta__column-left">
-                        <h2 class="conf-cta__name">Employer
-                            Branding </h2>
-                        <img class="conf-cta__icon"
+                    <div class="conf-cta__left">
+                        <p class="conf-cta__left-name">Rekrutacja
+                            i Sourcing</p>
+                        <img class="conf-cta__left-icon"
                             src="<?php echo get_template_directory_uri(); ?>/conference/img/ctaicons03.jpg" />
-                        <a class="conf-cta__btn">Kup bilet <?php get_template_part('img/svg/arrow.svg'); ?></a>
+                        <a class="conf-cta__btn">KUP BILET <?php get_template_part('img/svg/arrow.svg'); ?></a>
                     </div>
-                    <div class="conf-cta__column-right">
-                        <div class="conf-cta__column-time">
-                            <p class="conf-cta__time">8:00 - 9:00</p>
-                            <p class="conf-cta__time">9:00 - 10:00</p>
-                            <p class="conf-cta__time">10:00 - 10:15</p>
+                    <div class="conf-cta__right">
+                        <div class="conf-cta__row">
+                            <p class="conf-cta__item-time">8:00 - 9:00</p>
+                            <div class="conf-cta__item-box">
+                                <p class="conf-cta__item-text">
+                                    <span class="semi-bold">Pięć wieków później zaczął być używany przemyśle
+                                        elektronicznym,
+                                        pozostając praktycznie
+                                    </span>
+                                    niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
+                                    Letrasetu,
+                                </p>
+                                <div class="conf-cta__item-person-wrapper">
+                                    <img class="conf-cta__item-img"
+                                        src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
+                                    <div class="conf-cta__item-name-wrapper">
+                                        <p class="conf-cta__item-name semi-bold">Jadwiga Katarzyna</p>
+                                        <p class="conf-cta__item-name-bottom">Rekrutacja i sourcing</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="conf-cta__column-lg">
-                            <p class="conf-cta__text">
-                                <span class="bold">Pięć wieków później zaczął być używany przemyśle elektronicznym,
-                                    pozostając praktycznie
-                                </span>
-                                niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
-                                Letrasetu,
-                            </p>
-                            <div class="conf-cta__person">
-                                <img class="conf-cta__img"
-                                    src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
-                                <div class="conf-cta__caption">
-                                    <p class="conf-cta__name bold">Jadwiga Katarzyna</p>
-                                    <p class="conf-cta__name-bottom">Rekrutacja i sourcing</p>
-                                </div>
-
-                            </div>
-                            <p class="conf-cta__text">
-                                <span class="bold">Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
-                                    przemyśle
-                                    poligraficznym.</span>
-                                Został po raz pierwszy użyty w XV w. przez nieznanego drukarza.
-                            </p>
-                            <div class="conf-cta__person">
-                                <img class="conf-cta__img"
-                                    src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
-                                <div class="conf-cta__caption">
-                                    <p class="conf-cta__name bold">Jadwiga Katarzyna</p>
-                                    <p class="conf-cta__name-bottom">Rekrutacja i sourcing</p>
+                        <div class="conf-cta__row">
+                            <p class="conf-cta__item-time">9:00 - 10:00</p>
+                            <div class="conf-cta__item-box">
+                                <p class="conf-cta__item-text">
+                                    <span class="semi-bold">Pięć wieków później zaczął być używany przemyśle
+                                        elektronicznym,
+                                        pozostając praktycznie
+                                    </span>
+                                    niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
+                                    Letrasetu,
+                                </p>
+                                <div class="conf-cta__item-person-wrapper">
+                                    <img class="conf-cta__item-img"
+                                        src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
+                                    <div class="conf-cta__item-name-wrapper">
+                                        <p class="conf-cta__item-name semi-bold">Jadwiga Katarzyna</p>
+                                        <p class="conf-cta__item-name-bottom">Rekrutacja i sourcing</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="conf-cta__person">
-                                <img class="conf-cta__img"
-                                    src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
-                                <div class="conf-cta__caption">
-                                    <p class="conf-cta__name bold">Jadwiga Katarzyna</p>
-                                    <p class="conf-cta__name-bottom">Rekrutacja i sourcing</p>
+                        </div>
+                        <div class="conf-cta__row">
+                            <p class="conf-cta__item-time">10:00 - 11:00</p>
+                            <div class="conf-cta__item-box">
+                                <div class="conf-cta__item-person-wrapper">
+                                    <img class="conf-cta__item-img"
+                                        src="<?php echo get_template_directory_uri(); ?>/conference/img/coffe.jpg" />
+                                    <div class="conf-cta__item-name-wrapper">
+                                        <p class="conf-cta__item-name semi-bold">Lunch</p>
+                                        <p class="conf-cta__item-name-bottom">Kawa i smakołyki</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="conf-cta__item">
-                    <div class="conf-cta__column-left">
-                        <h2 class="conf-cta__name">Employer
-                            Branding </h2>
-                        <img class="conf-cta__icon"
+                    <div class="conf-cta__left">
+                        <p class="conf-cta__left-name">Happiness
+                            i Wellbeing</p>
+                        <img class="conf-cta__left-icon"
                             src="<?php echo get_template_directory_uri(); ?>/conference/img/ctaicons04.jpg" />
-                        <a class="conf-cta__btn">Kup bilet <?php get_template_part('img/svg/arrow.svg'); ?></a>
+                        <a class="conf-cta__btn">KUP BILET <?php get_template_part('img/svg/arrow.svg'); ?></a>
                     </div>
-                    <div class="conf-cta__column-right">
-                        <div class="conf-cta__column-time">
-                            <p class="conf-cta__time">8:00 - 9:00</p>
-                            <p class="conf-cta__time">9:00 - 10:00</p>
-                            <p class="conf-cta__time">10:00 - 10:15</p>
-                        </div>
-                        <div class="conf-cta__column-lg">
-                            <p class="conf-cta__text">
-                                <span class="bold">Pięć wieków później zaczął być używany przemyśle elektronicznym,
-                                    pozostając praktycznie
-                                </span>
-                                niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
-                                Letrasetu,
-                            </p>
-                            <div class="conf-cta__person">
-                                <img class="conf-cta__img"
-                                    src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
-                                <div class="conf-cta__caption">
-                                    <p class="conf-cta__name bold">Jadwiga Katarzyna</p>
-                                    <p class="conf-cta__name-bottom">Rekrutacja i sourcing</p>
-                                </div>
+                    <div class="conf-cta__right">
 
-                            </div>
-                            <p class="conf-cta__text">
-                                <span class="bold">Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
-                                    przemyśle
-                                    poligraficznym.</span>
-                                Został po raz pierwszy użyty w XV w. przez nieznanego drukarza.
-                            </p>
-                            <div class="conf-cta__person">
-                                <img class="conf-cta__img"
-                                    src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
-                                <div class="conf-cta__caption">
-                                    <p class="conf-cta__name bold">Jadwiga Katarzyna</p>
-                                    <p class="conf-cta__name-bottom">Rekrutacja i sourcing</p>
+                        <div class="conf-cta__row">
+                            <p class="conf-cta__item-time">8:00 - 9:00</p>
+                            <div class="conf-cta__item-box">
+                                <p class="conf-cta__item-text">
+                                    <span class="semi-bold">Pięć wieków później zaczął być używany przemyśle
+                                        elektronicznym,
+                                        pozostając praktycznie
+                                    </span>
+                                    niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
+                                    Letrasetu,
+                                </p>
+                                <div class="conf-cta__item-person-wrapper">
+                                    <img class="conf-cta__item-img"
+                                        src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
+                                    <div class="conf-cta__item-name-wrapper">
+                                        <p class="conf-cta__item-name semi-bold">Jadwiga Katarzyna</p>
+                                        <p class="conf-cta__item-name-bottom">Rekrutacja i sourcing</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="conf-cta__person">
-                                <img class="conf-cta__img"
-                                    src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
-                                <div class="conf-cta__caption">
-                                    <p class="conf-cta__name bold">Jadwiga Katarzyna</p>
-                                    <p class="conf-cta__name-bottom">Rekrutacja i sourcing</p>
+                        </div>
+                        <div class="conf-cta__row">
+                            <p class="conf-cta__item-time">9:00 - 9:15</p>
+                            <div class="conf-cta__item-box">
+                                <div class="conf-cta__item-person-wrapper">
+                                    <img class="conf-cta__item-img"
+                                        src="<?php echo get_template_directory_uri(); ?>/conference/img/coffe.jpg" />
+                                    <div class="conf-cta__item-name-wrapper">
+                                        <p class="conf-cta__item-name semi-bold">Lunch</p>
+                                        <p class="conf-cta__item-name-bottom">Kawa i smakołyki</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conf-cta__row">
+                            <p class="conf-cta__item-time">9:15 - 10:00</p>
+                            <div class="conf-cta__item-box">
+                                <p class="conf-cta__item-text">
+                                    <span class="semi-bold">Pięć wieków później zaczął być używany przemyśle
+                                        elektronicznym,
+                                        pozostając praktycznie
+                                    </span>
+                                    niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
+                                    Letrasetu,
+                                </p>
+                                <div class="conf-cta__item-person-wrapper">
+                                    <img class="conf-cta__item-img"
+                                        src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
+                                    <div class="conf-cta__item-name-wrapper">
+                                        <p class="conf-cta__item-name semi-bold">Jadwiga Katarzyna</p>
+                                        <p class="conf-cta__item-name-bottom">Rekrutacja i sourcing</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

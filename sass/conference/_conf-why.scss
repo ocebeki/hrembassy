@@ -1,6 +1,10 @@
 .conf-why {
     &__wrapper {
         padding: 160px 0 118px 0;
+
+        @media screen and (max-width:$screen-lg) {
+            padding: 90px 0;
+        }
     }
 
     &__content-top {
@@ -9,37 +13,54 @@
         align-items: flex-start;
         color: $color-main;
         margin-bottom: 85px;
+
+        @media screen and (max-width:$screen-lg) {
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 25px;
+        }
     }
 
     &__title {
         width: 275px;
         font-size: 34px;
         font-weight: 700;
+
+        @media screen and (max-width:$screen-lg) {
+            width: auto;
+            margin-bottom: 10px;
+        }
     }
 
-    &__btn {
-        cursor: pointer;
-        width: 155px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .conf-btn {
+        @media screen and (max-width:$screen-md) {
+            margin-bottom: 16px;
+        }
     }
 
     &__text {
         font-weight: 40;
         font-size: 14px;
         width: 640px;
+
+        @media screen and (max-width:$screen-lg) {
+            order: 1;
+            width: auto;
+        }
     }
 
     &__content-bottom {
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width:$screen-lg) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__item {
         width: calc(25% - 20px);
-        height: 400px;
         margin: 0 10px;
         padding: 25px;
         background: $color-main-conf;
@@ -51,6 +72,10 @@
         &:nth-child(1) {
             background: $color-main-conf;
             margin-left: 0;
+
+            @media screen and (max-width:$screen-lg) {
+                margin: 10px
+            }
         }
 
         &:nth-child(2) {
@@ -64,20 +89,29 @@
         &:nth-child(4) {
             background: #54428a;
             margin-right: 0;
+
+            @media screen and (max-width:$screen-lg) {
+                margin: 10px
+            }
         }
 
-
+        @media screen and (max-width:$screen-lg) {
+            width: 300px;
+            margin: 10px;
+        }
     }
 
     &__item-number {
         font-size: 34px;
         opacity: 0.5;
         font-weight: 700;
+        margin-bottom: 90px;
     }
 
     &__item-icon {
         width: 95px;
         height: 95px;
+        margin-bottom: 80px;
 
         img {
             width: 100%;

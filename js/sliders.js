@@ -251,8 +251,6 @@
             klienci();
             opinie();
             trenerzy();
-            prelegenci();
-
         });
     })
 }(jQuery));

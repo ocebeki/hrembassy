@@ -21,6 +21,7 @@
         bottom: 0;
         min-width: 100%;
         min-height: 100%;
+        max-width: none;
     }
 
     &__content-top {
@@ -28,90 +29,122 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 730px;
+        max-width: 90%;
         text-align: center;
     }
 
-    &__btn {
-        cursor: pointer;
-        width: 155px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .conf-btn {
+        @media screen and (max-width:400px) {
+            width: 140px;
+            height: 40px;
+        }
     }
 
     &__title {
         font-weight: 700;
         font-size: 54px;
+
+        @media screen and (max-width:$screen-sm) {
+            font-size: 45px;
+        }
+
+        @media screen and (max-width:$screen-xs) {
+            font-size: 37px;
+        }
+
     }
 
     &__subtitle {
         font-weight: 700;
         font-size: 16px;
+
+        @media screen and (max-width:$screen-xs) {
+            font-size: 14px;
+        }
     }
 
     &__content-bottom {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        width: 100%;
         position: absolute;
         bottom: 0px;
         left: 0;
         right: 0;
+
+        @media screen and (max-width:880px) {
+            justify-content: center;
+        }
 
     }
 
     &__counting-down {
         width: 500px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-flow: column;
+        align-items: center;
         padding-bottom: 24px;
+
+        @media screen and (max-width:880px) {
+            width: auto;
+        }
     }
 
     &__counting-down-title {
         font-weight: 500;
         font-size: 14px;
+        text-align: center;
     }
 
     &__counting-down-item {
         font-size: 18px;
         font-weight: 300;
+
+        @media screen and (max-width:$screen-sm) {
+            font-size: 15px;
+        }
+
+        @media screen and (max-width:$screen-xs) {
+            font-size: 13px;
+        }
     }
 
     &__counting-down-counters {
-        width: 100%;
         display: flex;
         justify-content: center;
 
+        @media screen and (max-width:$screen-md) {
+            justify-content: flex-end;
+        }
     }
 
     &__counting-number {
         font-size: 54px;
         margin: 0 10px;
-        line-height: 50px;
-    }
 
-    &__lang,
-    &__media {
-        width: 200px;
-        display: flex;
+        @media screen and (max-width:$screen-sm) {
+            font-size: 45px;
+            margin: 0 3px;
 
-    }
+        }
 
-    &__lang {
-        justify-content: flex-end;
-        opacity: 0;
-        cursor: auto;
+        @media screen and (max-width:$screen-xs) {
+            font-size: 40px;
+
+        }
     }
 
     &__media {
         padding-bottom: 24px;
+        display: flex;
+        width: 200px;
 
         path {
             fill: $color-white;
+        }
+
+        @media screen and (max-width:880px) {
+            display: none;
         }
     }
 
@@ -120,6 +153,14 @@
 
         &:hover {
             opacity: 1 !important;
+        }
+    }
+
+    &__right-column {
+        width: 200px;
+
+        @media screen and (max-width:880px) {
+            display: none;
         }
     }
 }

@@ -1,0 +1,30 @@
+.conf-btn {
+    background: $color-accent;
+    border: none;
+    width: 155px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        background: $color-main;
+        color: $color-white;
+    }
+
+    &--main {
+        background: $color-main;
+
+        &:hover {
+
+            background: $color-accent;
+        }
+    }
+}
+
+.semi-bold {
+    font-weight: 500
+}

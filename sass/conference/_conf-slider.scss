@@ -2,6 +2,19 @@
     padding-top: 70px;
     color: $color-main;
 
+    .slick-track {
+        display: flex;
+
+    }
+
+    .slick-slide {
+        height: auto;
+
+        >div {
+            height: 100%;
+        }
+    }
+
     &__top {
         display: flex;
         justify-content: space-between;
@@ -42,7 +55,7 @@
     }
 
     &__item {
-        height: 400px;
+        height: 100%;
         width: 320px;
         margin: 0 10px;
         background: $color-white;
@@ -55,6 +68,7 @@
     &__item-top {
         display: flex;
         align-items: center;
+        margin-bottom: 14px;
     }
 
     &__item-img {
@@ -71,6 +85,7 @@
     &__item-middle {
         font-size: 13px;
         font-weight: 400;
+        margin-bottom: 14px;
 
     }
 
@@ -115,14 +130,9 @@
         margin: 0 -10px;
     }
 
-    &__btn {
+    .conf-btn {
         width: 100%;
         height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: $color-white;
-        cursor: pointer;
         margin-bottom: 25px;
 
         svg {

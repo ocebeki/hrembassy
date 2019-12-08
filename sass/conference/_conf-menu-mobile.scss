@@ -1,0 +1,117 @@
+.conf-header-mobile {
+    display: none;
+    padding: 30px 14px;
+
+    &--active {
+        background: $color-main;
+    }
+
+    @media screen and (max-width:880px) {
+        display: block;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        z-index: 10;
+    }
+
+    &__logo {
+        width: 170px;
+
+        @media screen and (max-width:$screen-lg) {
+            width: 140px;
+        }
+    }
+
+    &__burger {
+        .hamburger {
+            margin: 0;
+        }
+
+        .hamburger__line {
+            background: $color-accent;
+            width: 100% !important;
+        }
+    }
+
+    &__bottom {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: $color-main;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        justify-content: center;
+
+        &--active {
+            display: flex
+        }
+    }
+
+    &__logo-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__menu {
+        font-weight: 500;
+        list-style: none;
+        align-items: center;
+        display: flex;
+        padding: 13px 13px;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    &__menu-item {
+        margin: 0 10px;
+        padding: 14px;
+
+    }
+
+    &__menu-link {
+        color: $color-white;
+        font-weight: 500;
+        font-size: 21px;
+        font-size: 17px;
+
+        &:hover {
+            color: $color-accent;
+        }
+    }
+
+    &__btn {
+        border: none;
+        width: 140px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .social__item {
+        svg {
+            path {
+                fill: $color-accent;
+            }
+
+            &:hover {
+                path {
+                    fill: $color-white;
+                }
+            }
+        }
+    }
+}

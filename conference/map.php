@@ -40,6 +40,6 @@
                 <?php get_template_part('template-parts/conf-map'); ?>
             </div>
         </div>
-        <a class="conf-map__btn btn">Zostań partenrem <?php get_template_part('img/svg/arrow.svg'); ?></a>
+        <a class="conf-btn">Zostań partenrem <?php get_template_part('img/svg/arrow.svg'); ?></a>
     </div>
 </section>

@@ -21,7 +21,7 @@
                             <p class="conf-slider__item-name">Jadwiga Katarzyna
                                 Nowacka</p>
                         </div>
-                        <div class="conf__slider--item-midle">
+                        <div class="conf-slider__item-midle">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores veniam officiis magni
                             minus
                             numquam beatae? Facere
@@ -34,7 +34,7 @@
                                 src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
                             <p class="conf-slider__item-name">Adrian Martinez</p>
                         </div>
-                        <div class="conf__slider--item-midle">
+                        <div class="conf-slider__item-midle">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores veniam officiis magni
                             minus
                             numquam beatae? Facere
@@ -47,9 +47,15 @@
                                 src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
                             <p class="conf-slider__item-name">Adrian Martinez</p>
                         </div>
-                        <div class="conf__slider--item-midle">
+                        <div class="conf-slider__item-middle">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores veniam officiis magni
+                            minus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores veniam officiis
+                            magni
+                            minus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores veniam officiis
+                            magni
                             minus
+                            numquam beatae? Facere
+                            numquam beatae? Facere
                             numquam beatae? Facere
                         </div>
                         <a class="conf-slider__item-btn">Więcej <?php get_template_part('img/svg/arrow.svg'); ?> </a>
@@ -60,7 +66,7 @@
                                 src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
                             <p class="conf-slider__item-name">Olga słobodzian</p>
                         </div>
-                        <div class="conf__slider--item-midle">
+                        <div class="conf-slider__item-midle">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores veniam officiis magni
                             minus
                             numquam beatae? Facere
@@ -73,7 +79,7 @@
                                 src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
                             <p class="conf-slider__item-name">Karolina Latus</p>
                         </div>
-                        <div class="conf__slider--item-midle">
+                        <div class="conf-slider__item-midle">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores veniam officiis magni
                             minus
                             numquam beatae? Facere
@@ -86,7 +92,7 @@
                                 src="<?php echo get_template_directory_uri(); ?>/conference/img/slider01.jpg" />
                             <p class="conf-slider__item-name">Karolina Latus</p>
                         </div>
-                        <div class="conf__slider--item-midle">
+                        <div class="conf-slider__item-midle">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores veniam officiis magni
                             minus
                             numquam beatae? Facere
@@ -94,7 +100,7 @@
                         <a class="conf-slider__item-btn">Więcej <?php get_template_part('img/svg/arrow.svg'); ?> </a>
                     </div>
                 </div>
-                <a class="conf-slider__btn btn">Kupuję bilet <?php get_template_part('img/svg/arrow.svg'); ?></a>
+                <a class="conf-btn">Kupuję bilet <?php get_template_part('img/svg/arrow.svg'); ?></a>
             </div>
         </div>
 </section>

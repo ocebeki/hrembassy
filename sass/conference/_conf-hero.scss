@@ -1,16 +1,22 @@
 .conf-hero {
     position: relative;
     color: $color-white;
-    display: flex;
+
+    @media screen and (max-width:$screen-sm) {
+        background: #634fa1;
+        height: 260px;
+    }
 
     &__bc {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
+        @media screen and (max-width:$screen-sm) {
+            display: none;
+        }
+    }
+
+    &__container {
+        margin: 0;
+        padding: 0;
+        height: 100%;
     }
 
     &__wrapper {
@@ -18,29 +24,44 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 200px 0;
         position: relative;
+        height: 100%;
+    }
+
+    &__text-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 300px;
+        max-width: 90%;
     }
 
     &__title {
-        width: 640px;
         text-align: center;
         font-size: 34px;
         font-weight: 700;
+
+        @media screen and (max-width:$screen-md) {
+            font-size: 26px;
+        }
+
+        @media screen and (max-width:$screen-sm) {
+            font-size: 22px;
+
+        }
+
+        @media screen and (max-width:535px) {
+            font-size: 16px;
+        }
     }
 
-    &__btn {
-        background: #37285f;
-        border: none;
-        width: 155px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .conf-btn {
+        margin: auto;
 
-        &:hover {
-            cursor: pointer;
-            background: $color-accent;
+        @media screen and (max-width:$screen-sm) {
+            width: 140px;
+            height: 40px;
         }
     }
 }

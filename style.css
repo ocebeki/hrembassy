@@ -9623,6 +9623,11 @@ label.checkbox span:after {
     height: 40px;
   }
 }
+@media screen and (max-width: 480px) {
+  .conf-header .conf-btn {
+    margin-top: 50px;
+  }
+}
 
 .conf-top {
   color: #fff;
@@ -10406,6 +10411,11 @@ label.checkbox span:after {
   font-size: 21px;
   font-weight: 700;
 }
+@media screen and (max-width: 480px) {
+  .conf-harmonogram__heading {
+    font-size: 14px;
+  }
+}
 .conf-harmonogram__price {
   font-size: 31px;
   font-weight: 300;
@@ -10447,6 +10457,12 @@ label.checkbox span:after {
   color: #38275f;
   font-weight: 500;
 }
+@media screen and (max-width: 480px) {
+  .conf-harmonogram__bottom-caption {
+    max-width: 100%;
+    font-size: 11px;
+  }
+}
 .conf-harmonogram__link {
   color: #e92e7d;
   cursor: pointer;
@@ -10484,15 +10500,30 @@ label.checkbox span:after {
   display: flex;
   padding: 40px 0 70px 0;
 }
+@media screen and (max-width: 992px) {
+  .conf-map__adress-wrapper {
+    flex-wrap: wrap;
+  }
+}
 .conf-map__adress-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 25%;
 }
+@media screen and (max-width: 992px) {
+  .conf-map__adress-item {
+    width: 50%;
+  }
+}
 .conf-map__heading {
   font-weight: 600;
   font-size: 14px;
+}
+@media screen and (max-width: 992px) {
+  .conf-map__heading {
+    font-size: 13px;
+  }
 }
 .conf-map__icon {
   width: 40px;
@@ -10508,6 +10539,11 @@ label.checkbox span:after {
 }
 .conf-map__first-line {
   margin: 0;
+}
+@media screen and (max-width: 992px) {
+  .conf-map__heading-bottom {
+    font-size: 10px;
+  }
 }
 .conf-map .conf-btn {
   width: 100%;
@@ -10557,9 +10593,11 @@ label.checkbox span:after {
   height: 70px;
   color: #38275f;
 }
-.conf-footer__social, .conf-footer__copyright, .conf-footer__text {
-  width: 33%;
-  display: flex;
+@media screen and (max-width: 768px) {
+  .conf-footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .conf-footer__copyright {
   justify-content: flex-start;
@@ -10574,6 +10612,23 @@ label.checkbox span:after {
 .conf-footer__link {
   color: #e92e7d;
   margin-left: 5px;
+}
+.conf-footer__social, .conf-footer__copyright, .conf-footer__text {
+  width: 33%;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .conf-footer__social, .conf-footer__copyright, .conf-footer__text {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    width: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .conf-footer__link {
+    margin: 10px auto;
+  }
 }
 .conf-footer .social__item {
   opacity: 0.7;

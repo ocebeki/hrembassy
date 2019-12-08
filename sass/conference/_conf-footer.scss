@@ -5,15 +5,12 @@
         align-items: center;
         height: 70px;
         color: $color-main;
-    }
 
-    &__social,
-    &__copyright,
-    &__text {
-        width: 33%;
-        display: flex;
+        @media screen and (max-width:$screen-sm) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
-
 
     &__copyright {
         justify-content: flex-start;
@@ -31,6 +28,26 @@
     &__link {
         color: $color-accent;
         margin-left: 5px;
+    }
+
+    &__social,
+    &__copyright,
+    &__text {
+        width: 33%;
+        display: flex;
+
+        @media screen and (max-width:$screen-sm) {
+            flex-direction: column;
+            align-items: center;
+            margin: 10px auto;
+            width: auto;
+        }
+    }
+
+    &__link {
+        @media screen and (max-width:$screen-sm) {
+            margin: 10px auto;
+        }
     }
 
     .social__item {

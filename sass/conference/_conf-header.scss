@@ -75,5 +75,10 @@
             height: 40px;
 
         }
+
+        @media screen and (max-width:$screen-xs) {
+            margin-top: 50px;
+
+        }
     }
 }

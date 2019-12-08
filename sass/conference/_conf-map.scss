@@ -11,6 +11,10 @@
         display: flex;
         padding: 40px 0 70px 0;
 
+        @media screen and (max-width:$screen-md) {
+            flex-wrap: wrap
+        }
+
     }
 
     &__adress-item {
@@ -18,11 +22,19 @@
         flex-direction: column;
         justify-content: center;
         width: 25%;
+
+        @media screen and (max-width:$screen-md) {
+            width: 50%;
+        }
     }
 
     &__heading {
         font-weight: 600;
         font-size: 14px;
+
+        @media screen and (max-width:$screen-md) {
+            font-size: 13px;
+        }
 
     }
 
@@ -42,6 +54,12 @@
 
     &__first-line {
         margin: 0;
+    }
+
+    &__heading-bottom {
+        @media screen and (max-width:$screen-md) {
+            font-size: 10px;
+        }
     }
 
     .conf-btn {

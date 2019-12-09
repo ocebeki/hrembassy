@@ -9892,6 +9892,11 @@ label.checkbox span:after {
   font-weight: 700;
   margin-bottom: 70px;
 }
+@media screen and (max-width: 768px) {
+  .conf-why__item-number {
+    margin-bottom: 50px;
+  }
+}
 .conf-why__item-icon {
   width: 95px;
   height: 95px;
@@ -9900,6 +9905,11 @@ label.checkbox span:after {
 .conf-why__item-icon img {
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .conf-why__item-icon {
+    margin-bottom: 50px;
+  }
 }
 .conf-why__item-text {
   font-weight: 700;
@@ -10443,15 +10453,12 @@ label.checkbox span:after {
   font-size: 13px;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 @media screen and (max-width: 992px) {
   .conf-harmonogram__text {
     justify-content: center;
-  }
-}
-@media screen and (max-width: 480px) {
-  .conf-harmonogram__text {
-    justify-content: left;
+    height: 44px;
   }
 }
 .conf-harmonogram__heading {
@@ -10524,11 +10531,6 @@ label.checkbox span:after {
 @media screen and (max-width: 992px) {
   .conf-harmonogram__item-content-mobile {
     display: flex;
-  }
-}
-@media screen and (max-width: 480px) {
-  .conf-harmonogram__item-content-mobile {
-    align-self: baseline;
   }
 }
 
@@ -10655,6 +10657,13 @@ label.checkbox span:after {
   width: 16.66%;
   display: flex !important;
   justify-content: space-evenly;
+  margin: 0 10px;
+}
+.conf-partners__item:first-child {
+  margin-left: 0;
+}
+.conf-partners__item:last-child {
+  margin-left: 0;
 }
 .conf-partners .slick-track {
   display: flex;

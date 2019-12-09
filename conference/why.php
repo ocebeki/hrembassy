@@ -1,4 +1,4 @@
-<section class="section conf-why">
+<section class="section conf-why" id="top">
   <div class="container">
     <div class="conf-why__wrapper">
       <div class="conf-why__content-top">

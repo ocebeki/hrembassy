@@ -5,6 +5,10 @@
             jQuery('.conf-header-mobile__bottom').toggleClass('conf-header-mobile__bottom--active')
             jQuery('.conf-header-mobile').toggleClass('conf-header-mobile--active')
         })
+        jQuery(".conf-header-mobile__menu-link").on("click", function () {
+            jQuery('.conf-header-mobile__bottom').toggleClass('conf-header-mobile__bottom--active')
+            jQuery('.conf-header-mobile').toggleClass('conf-header-mobile--active')
+        })
 
         const daysWrapper = document.querySelector('.conf-top__counting-down-day');
         hoursWrapper = document.querySelector('.conf-top__counting-down-hour');
@@ -12,6 +16,17 @@
         secWrapper = document.querySelector('.conf-top__counting-down-sec');
 
         let countDownDate = new Date("Feb 27, 2020 09:00:00").getTime();
+
+        const docRoot = jQuery('html, body');
+
+        jQuery('a[href^="#"]').click(function () {
+            docRoot.animate({
+                top: "+=110",
+                scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top
+            }, 500);
+
+            return false;
+        });
 
         if (daysWrapper) {
 
@@ -44,7 +59,7 @@
                 adaptiveHeight: false,
                 responsive: [
                     {
-                        breakpoint: 1200,
+                        breakpoint: 1300,
                         settings: {
                             slidesToShow: 3,
                         }
@@ -64,6 +79,26 @@
                 ]
             });
         }
+        function partners() {
+            $('[data-slider="partners"]').slick({
+                slidesToShow: 6,
+                slidesToScroll: 6,
+                adaptiveHeight: false,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                speed: 2500,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        }
+                    },
+                ]
+            });
+        }
 
         if (jQuery('#trigger')) {
             var controller = new ScrollMagic.Controller();
@@ -73,5 +108,6 @@
         }
 
         prelegenci();
+        partners()
     })
 }(jQuery));

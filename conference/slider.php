@@ -1,4 +1,4 @@
-<section class="conf-slider">
+<section class="conf-slider" id="prelegenci">
   <div class="container">
     <div class="conf-slider__wrapper">
       <div class="conf-slider__top">

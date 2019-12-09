@@ -3,6 +3,10 @@
     margin-top: -74px;
     padding-top: 120px;
 
+    @media screen and (max-width:$screen-sm) {
+        margin-top: -55px;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -24,7 +28,12 @@
 
     &__item {
         width: 16.66%;
-        display: flex;
+        display: flex !important;
         justify-content: space-evenly;
+    }
+
+    .slick-track {
+        display: flex;
+        align-items: center;
     }
 }

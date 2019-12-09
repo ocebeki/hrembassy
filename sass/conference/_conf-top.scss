@@ -2,13 +2,13 @@
     color: $color-white;
     display: flex;
     align-items: center;
+    overflow: hidden;
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: calc(100vw - 40px);
         height: 100vh;
         position: relative;
     }

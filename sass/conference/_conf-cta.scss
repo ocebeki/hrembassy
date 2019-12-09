@@ -2,16 +2,18 @@
     color: $color-main;
     margin-bottom: 128px;
 
+    @media screen and (max-width:$screen-sm) {
+        margin-bottom: 65px;
+
+    }
+
     &__header {
         display: flex;
-        align-items: center;
         margin-bottom: 20px;
 
         @media screen and (max-width:800px) {
             display: none;
-
         }
-
     }
 
     &__column-sm {
@@ -20,12 +22,6 @@
         background: $color-main-conf;
         color: $color-white;
         width: 15.7%;
-
-        &:nth-child(1) {
-            @media screen and (max-width:$screen-lg) {
-                flex-grow: 0.65;
-            }
-        }
     }
 
     &__column-lg {
@@ -36,12 +32,10 @@
 
     &__column-top {
         border-radius: 5px;
-        justify-content: center;
         align-items: center;
         margin: 0 10px;
         position: relative;
         font-weight: 600;
-        font-size: 12px !important;
         padding: 13px 0;
 
         &:nth-child(1) {
@@ -74,7 +68,6 @@
                 width: 58%;
             }
         }
-
     }
 
     &__title,
@@ -107,6 +100,8 @@
         display: flex;
         background: $color-white;
         margin-bottom: 20px;
+        border-radius: 5px;
+        overflow: hidden;
 
         &:nth-child(even) {
             .conf-cta__left {
@@ -118,7 +113,6 @@
             flex-direction: column;
 
         }
-
     }
 
     &__left {
@@ -138,7 +132,6 @@
             width: auto;
             flex-direction: row;
             align-items: center;
-
         }
     }
 
@@ -151,6 +144,11 @@
     &__left-icon {
         width: 85px;
         height: 85px;
+
+        @media screen and (max-width:$screen-md) {
+            width: 60px;
+            height: 60px;
+        }
     }
 
     &__btn {
@@ -171,14 +169,11 @@
 
             path {
                 fill: $color-white;
-
             }
-
         }
 
         @media screen and (max-width:800px) {
             display: none;
-
         }
     }
 
@@ -191,7 +186,6 @@
         @media screen and (max-width:$screen-sm) {
             padding: 45px 20px;
         }
-
     }
 
     &__row {
@@ -213,7 +207,15 @@
         font-weight: 500;
 
         @media screen and (max-width:$screen-md) {
-            padding-left: 0;
+            padding-left: 20px;
+        }
+
+        @media screen and (max-width:800px) {
+            padding-left: 10px;
+        }
+
+        @media screen and (max-width:769px) {
+            padding-left: 0px;
         }
     }
 

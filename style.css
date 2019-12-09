@@ -9633,13 +9633,13 @@ label.checkbox span:after {
   color: #fff;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .conf-top__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(100vw - 40px);
   height: 100vh;
   position: relative;
 }
@@ -9820,7 +9820,7 @@ label.checkbox span:after {
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1350px) {
   .conf-why .conf-btn {
     margin-bottom: 16px;
   }
@@ -9890,12 +9890,12 @@ label.checkbox span:after {
   font-size: 34px;
   opacity: 0.5;
   font-weight: 700;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 .conf-why__item-icon {
   width: 95px;
   height: 95px;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 .conf-why__item-icon img {
   width: 100%;
@@ -10025,8 +10025,9 @@ label.checkbox span:after {
   background: #fff;
   padding: 40px;
   display: flex !important;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  position: relative;
 }
 .conf-slider__item-top {
   display: flex;
@@ -10052,6 +10053,8 @@ label.checkbox span:after {
   font-size: 14px;
   color: #38275f;
   cursor: pointer;
+  position: absolute;
+  bottom: 16px;
 }
 .conf-slider__item-btn svg {
   margin-left: 10px;
@@ -10088,14 +10091,23 @@ label.checkbox span:after {
 .conf-slider .conf-btn svg path {
   fill: #fff;
 }
+@media screen and (max-width: 768px) {
+  .conf-slider .conf-btn {
+    height: 60px;
+  }
+}
 
 .conf-cta {
   color: #38275f;
   margin-bottom: 128px;
 }
+@media screen and (max-width: 768px) {
+  .conf-cta {
+    margin-bottom: 65px;
+  }
+}
 .conf-cta__header {
   display: flex;
-  align-items: center;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 800px) {
@@ -10110,11 +10122,6 @@ label.checkbox span:after {
   color: #fff;
   width: 15.7%;
 }
-@media screen and (max-width: 1350px) {
-  .conf-cta__column-sm:nth-child(1) {
-    flex-grow: 0.65;
-  }
-}
 .conf-cta__column-lg {
   display: flex;
   flex-direction: column;
@@ -10122,12 +10129,10 @@ label.checkbox span:after {
 }
 .conf-cta__column-top {
   border-radius: 5px;
-  justify-content: center;
   align-items: center;
   margin: 0 10px;
   position: relative;
   font-weight: 600;
-  font-size: 12px !important;
   padding: 13px 0;
 }
 .conf-cta__column-top:nth-child(1) {
@@ -10185,6 +10190,8 @@ label.checkbox span:after {
   display: flex;
   background: #fff;
   margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .conf-cta__item:nth-child(even) .conf-cta__left {
   background: #5b4794;
@@ -10223,6 +10230,12 @@ label.checkbox span:after {
 .conf-cta__left-icon {
   width: 85px;
   height: 85px;
+}
+@media screen and (max-width: 992px) {
+  .conf-cta__left-icon {
+    width: 60px;
+    height: 60px;
+  }
 }
 .conf-cta__btn {
   color: #fff;
@@ -10276,7 +10289,17 @@ label.checkbox span:after {
 }
 @media screen and (max-width: 992px) {
   .conf-cta__item-time {
-    padding-left: 0;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .conf-cta__item-time {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .conf-cta__item-time {
+    padding-left: 0px;
   }
 }
 .conf-cta__item-box {
@@ -10307,11 +10330,18 @@ label.checkbox span:after {
   font-size: 12px;
 }
 
+.conf-harmonogram {
+  margin-bottom: 140px;
+}
+@media screen and (max-width: 992px) {
+  .conf-harmonogram {
+    margin-bottom: 60px;
+  }
+}
 .conf-harmonogram__wrapper {
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin-bottom: 140px;
 }
 .conf-harmonogram__package-wrapper {
   display: flex;
@@ -10331,25 +10361,32 @@ label.checkbox span:after {
   flex-basis: 100%;
   padding: 40px 10px;
 }
-.conf-harmonogram__item:nth-child(2) {
-  padding: 40px 0;
-}
-.conf-harmonogram__item:nth-child(4) {
+.conf-harmonogram__item:nth-child(3) {
   background: #e92e7d;
   color: #fff;
 }
-.conf-harmonogram__item:nth-child(4) .conf-harmonogram__heading {
+.conf-harmonogram__item:nth-child(3) .conf-harmonogram__heading {
   color: #38275f;
 }
-.conf-harmonogram__item:nth-child(4) .conf-harmonogram__price {
+.conf-harmonogram__item:nth-child(3) .conf-harmonogram__price {
   color: #fff;
 }
-.conf-harmonogram__item:nth-child(4) svg path {
+.conf-harmonogram__item:nth-child(3) svg path {
   fill: #fff;
+}
+@media screen and (max-width: 992px) {
+  .conf-harmonogram__item:nth-child(4) {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 1350px) {
   .conf-harmonogram__item {
     margin: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .conf-harmonogram__item {
+    margin-bottom: 65px;
   }
 }
 .conf-harmonogram__item-content {
@@ -10357,6 +10394,11 @@ label.checkbox span:after {
 }
 .conf-harmonogram__item-content .conf-harmonogram__heading {
   margin-bottom: 76px;
+}
+@media screen and (max-width: 992px) {
+  .conf-harmonogram__item-content .conf-harmonogram__heading {
+    display: none;
+  }
 }
 @media screen and (max-width: 992px) {
   .conf-harmonogram__item-content {
@@ -10402,19 +10444,19 @@ label.checkbox span:after {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 992px) {
+  .conf-harmonogram__text {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 480px) {
   .conf-harmonogram__text {
-    font-size: 11px;
+    justify-content: left;
   }
 }
 .conf-harmonogram__heading {
   font-size: 21px;
   font-weight: 700;
-}
-@media screen and (max-width: 480px) {
-  .conf-harmonogram__heading {
-    font-size: 14px;
-  }
 }
 .conf-harmonogram__price {
   font-size: 31px;
@@ -10425,7 +10467,6 @@ label.checkbox span:after {
 @media screen and (max-width: 480px) {
   .conf-harmonogram__price {
     font-size: 22px;
-    margin-bottom: 36px;
   }
 }
 .conf-harmonogram__price, .conf-harmonogram__heading {
@@ -10440,6 +10481,11 @@ label.checkbox span:after {
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 992px) {
+  .conf-harmonogram__icon {
+    display: none;
+  }
+}
 .conf-harmonogram .conf-btn {
   width: 116px;
   height: 40px;
@@ -10449,6 +10495,9 @@ label.checkbox span:after {
   font-weight: 500;
   margin-top: 30px;
   cursor: pointer;
+}
+.conf-harmonogram .conf-btn:hover {
+  background: #38275f;
 }
 .conf-harmonogram__bottom-caption {
   margin: auto;
@@ -10467,25 +10516,19 @@ label.checkbox span:after {
   color: #e92e7d;
   cursor: pointer;
 }
-.conf-harmonogram__item-mobile {
-  flex-basis: 100%;
-}
-.conf-harmonogram__item-mobile:last-child {
-  margin-bottom: 0px;
-}
-@media screen and (max-width: 992px) {
-  .conf-harmonogram__item-mobile {
-    display: flex;
-    position: relative;
-    margin-bottom: 50px;
-  }
-}
 .conf-harmonogram__item-content-mobile {
   display: none;
+  padding: 0;
+  flex-direction: column;
 }
 @media screen and (max-width: 992px) {
   .conf-harmonogram__item-content-mobile {
     display: flex;
+  }
+}
+@media screen and (max-width: 480px) {
+  .conf-harmonogram__item-content-mobile {
+    align-self: baseline;
   }
 }
 
@@ -10495,6 +10538,11 @@ label.checkbox span:after {
   padding: 0 20px;
   padding-bottom: 20px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  .conf-map__wrapper {
+    padding: 0 10px;
+  }
 }
 .conf-map__adress-wrapper {
   display: flex;
@@ -10519,10 +10567,18 @@ label.checkbox span:after {
 .conf-map__heading {
   font-weight: 600;
   font-size: 14px;
+  padding-right: 10px;
+  height: 36px;
+  margin: 0;
 }
 @media screen and (max-width: 992px) {
   .conf-map__heading {
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .conf-map__heading {
+    font-size: 11px;
   }
 }
 .conf-map__icon {
@@ -10539,6 +10595,11 @@ label.checkbox span:after {
 }
 .conf-map__first-line {
   margin: 0;
+}
+@media screen and (max-width: 480px) {
+  .conf-map__second-line {
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 992px) {
   .conf-map__heading-bottom {
@@ -10558,11 +10619,21 @@ label.checkbox span:after {
 .conf-map .conf-btn svg path {
   fill: #fff;
 }
+@media screen and (max-width: 768px) {
+  .conf-map .conf-btn {
+    height: 60px;
+  }
+}
 
 .conf-partners {
   background: #fff;
   margin-top: -74px;
   padding-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  .conf-partners {
+    margin-top: -55px;
+  }
 }
 .conf-partners__wrapper {
   display: flex;
@@ -10582,8 +10653,12 @@ label.checkbox span:after {
 }
 .conf-partners__item {
   width: 16.66%;
-  display: flex;
+  display: flex !important;
   justify-content: space-evenly;
+}
+.conf-partners .slick-track {
+  display: flex;
+  align-items: center;
 }
 
 .conf-footer__wrapper {
@@ -10639,10 +10714,12 @@ label.checkbox span:after {
 
 .conf-header-mobile {
   display: none;
-  padding: 30px 14px;
+  padding: 12px 14px;
+  transition: 0.3s;
 }
 .conf-header-mobile--active {
   background: #38275f;
+  transition: 0.3s;
 }
 @media screen and (max-width: 880px) {
   .conf-header-mobile {
@@ -10666,6 +10743,10 @@ label.checkbox span:after {
     width: 140px;
   }
 }
+.conf-header-mobile__burger {
+  display: flex;
+  align-items: center;
+}
 .conf-header-mobile__burger .hamburger {
   margin: 0;
 }
@@ -10684,9 +10765,11 @@ label.checkbox span:after {
   top: 0;
   height: 100vh;
   justify-content: center;
+  transition: 0.3s;
 }
 .conf-header-mobile__bottom--active {
   display: flex;
+  transition: 0.3s;
 }
 .conf-header-mobile__logo-img {
   width: 100%;

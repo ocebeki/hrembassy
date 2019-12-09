@@ -30,6 +30,15 @@
         width: 16.66%;
         display: flex !important;
         justify-content: space-evenly;
+        margin: 0 10px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-left: 0;
+        }
     }
 
     .slick-track {

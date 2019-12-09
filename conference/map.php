@@ -7,7 +7,7 @@
           <p class="conf-map__heading">Multikino Złote Tarasy</p>
           <div class="conf-map__heading-bottom">
             <p class="conf-map__first-line">Złota 59</p>
-            <p class="conf-map__first-second">00 - 12 Warszawa</p>
+            <p class="conf-map__second-line">00 - 12 Warszawa</p>
           </div>
         </div>
         <div class="conf-map__adress-item">
@@ -15,7 +15,7 @@
           <p class="conf-map__heading">Partnerzy, sponsorzy i reklama</p>
           <div class="conf-map__heading-bottom">
             <p class="conf-map__first-line">TEL. +48 123 456 789</p>
-            <p class="conf-map__first-second">MAIL. partners@hrembassy.pl</p>
+            <p class="conf-map__second-line">MAIL. partners@hrembassy.pl</p>
           </div>
         </div>
         <div class="conf-map__adress-item">
@@ -23,7 +23,7 @@
           <p class="conf-map__heading">Dla uczestnika</p>
           <div class="conf-map__heading-bottom">
             <p class="conf-map__first-line">TEL. +48 123 456 789</p>
-            <p class="conf-map__first-second">MAIL. partners@hrembassy.pl</p>
+            <p class="conf-map__second-line">MAIL. partners@hrembassy.pl</p>
           </div>
         </div>
         <div class="conf-map__adress-item">
@@ -31,7 +31,7 @@
           <p class="conf-map__heading">Dla mediów</p>
           <div class="conf-map__heading-bottom">
             <p class="conf-map__first-line">TEL. +48 123 456 789</p>
-            <p class="conf-map__first-second">MAIL. partners@hrembassy.pl</p>
+            <p class="conf-map__second-line">MAIL. partners@hrembassy.pl</p>
           </div>
         </div>
       </div>

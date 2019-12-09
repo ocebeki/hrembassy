@@ -119,13 +119,11 @@
         font-size: 13px;
         display: flex;
         align-items: center;
+        text-align: center;
 
         @media screen and(max-width:$screen-md) {
             justify-content: center;
-        }
-
-        @media screen and(max-width:$screen-xs) {
-            justify-content: left;
+            height: 44px;
         }
     }
 
@@ -205,10 +203,6 @@
 
         @media screen and(max-width:$screen-md) {
             display: flex
-        }
-
-        @media screen and(max-width:$screen-xs) {
-            align-self: baseline;
         }
     }
 }

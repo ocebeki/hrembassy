@@ -18,25 +18,25 @@
           </a>
           <ul class="conf-header__menu">
             <li class="conf-header__menu-item">
-              <a class="conf-header__menu-link" href="/">O Konferencji</a>
+              <a class="conf-header__menu-link" href="#top">O Konferencji</a>
             </li>
             <li class="conf-header__menu-item">
-              <a class="conf-header__menu-link" href="/">Prelegenci</a>
+              <a class="conf-header__menu-link" href="#prelegenci">Prelegenci</a>
             </li>
             <li class="conf-header__menu-item">
-              <a class="conf-header__menu-link" href="/">Program</a>
+              <a class="conf-header__menu-link" href="#cta">Program</a>
             </li>
             <li class="conf-header__menu-item">
-              <a class="conf-header__menu-link" href="/">Partnerzy</a>
+              <a class="conf-header__menu-link" href="#partners">Partnerzy</a>
             </li>
             <li class="conf-header__menu-item">
-              <a class="conf-header__menu-link" href="/">Lokalizacja</a>
+              <a class="conf-header__menu-link" href="#mapa">Lokalizacja</a>
             </li>
             <li class="conf-header__menu-item">
-              <a class="conf-header__menu-link" href="/">Bilety</a>
+              <a class="conf-header__menu-link" href="#harmonogram">Bilety</a>
             </li>
             <li class="conf-header__menu-item">
-              <a class="conf-header__menu-link" href="/">Kontakt</a>
+              <a class="conf-header__menu-link" href="#kontakt">Kontakt</a>
             </li>
           </ul>
           <a class="conf-btn">Zostań partnerem</a>

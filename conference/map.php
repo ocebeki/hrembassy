@@ -1,5 +1,5 @@
-<section class="conf-map">
-  <div class="container">
+<section class="conf-map" id="mapa">
+  <div class="container" id="kontakt">
     <div class="conf-map__wrapper">
       <div class="conf-map__adress-wrapper">
         <div class="conf-map__adress-item">

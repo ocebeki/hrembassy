@@ -33,7 +33,7 @@
     }
 
     .conf-btn {
-        @media screen and (max-width:$screen-md) {
+        @media screen and (max-width:$screen-lg) {
             margin-bottom: 16px;
         }
     }
@@ -105,13 +105,13 @@
         font-size: 34px;
         opacity: 0.5;
         font-weight: 700;
-        margin-bottom: 90px;
+        margin-bottom: 70px;
     }
 
     &__item-icon {
         width: 95px;
         height: 95px;
-        margin-bottom: 80px;
+        margin-bottom: 70px;
 
         img {
             width: 100%;

@@ -3,8 +3,8 @@
   <div class="container-fluid">
     <div class="conf-top__wrapper">
       <div class="conf-top__content-top">
-        <h1 class="conf-top__title">Najbardziej interaktywna konferencja HR w Polsce</h1>
-        <p class="conf-top__subtitle">27 LUTEGO, 2020 / WARSZAWA, MULTIKINO ZŁOTE TARASY</p>
+        <h1 class="conf-top__title"><?php the_field('nagłówek'); ?></h1>
+        <p class="conf-top__subtitle"><?php the_field('nagłówek_mały'); ?></p>
         <a class="conf-btn" id="trigger">Kup biltet</a>
       </div>
       <div class="conf-top__content-bottom">

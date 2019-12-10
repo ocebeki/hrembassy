@@ -9747,16 +9747,19 @@ label.checkbox span:after {
 .conf-top__counting-number {
   font-size: 54px;
   margin: 0 10px;
+  line-height: 54px;
 }
 @media screen and (max-width: 768px) {
   .conf-top__counting-number {
     font-size: 45px;
+    line-height: 45px;
     margin: 0 3px;
   }
 }
 @media screen and (max-width: 480px) {
   .conf-top__counting-number {
     font-size: 40px;
+    line-height: 40px;
   }
 }
 .conf-top__media {
@@ -10453,11 +10456,11 @@ label.checkbox span:after {
   font-size: 13px;
   display: flex;
   align-items: center;
-  text-align: center;
 }
 @media screen and (max-width: 992px) {
   .conf-harmonogram__text {
     justify-content: center;
+    text-align: center;
     height: 44px;
   }
 }

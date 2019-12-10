@@ -58,90 +58,18 @@
           <img src="<?php echo get_template_directory_uri(); ?>/conference/img/intel.jpg" />
         </div>
       </div>
-      <p class="conf-partners__heading">PARTNERZY HOUSTON</p>
+      <?php if( have_rows('partnerzy') ): 
+         while ( have_rows('partnerzy') ) : the_row(); ?>
+      <p class="conf-partners__heading"><?php the_sub_field('naglowek') ?></p>
       <div class="conf-partners__items-wrapper">
+        <?php if( have_rows('loga') ): 
+         while ( have_rows('loga') ) : the_row(); ?>
         <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/alfavox.jpg" />
+          <img src="<?php the_sub_field('logo') ?>" />
         </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/pwd.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/nextbike.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/medicover.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/expo.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/intel.jpg" />
-        </div>
+        <?php endwhile; endif; ?>
       </div>
-      <p class="conf-partners__heading">PARTNERZY FALCON</p>
-      <div class="conf-partners__items-wrapper">
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/alfavox.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/pwd.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/nextbike.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/medicover.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/expo.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/intel.jpg" />
-        </div>
-      </div>
-      <p class="conf-partners__heading">PARTNERZY MEDIALNI</p>
-      <div class="conf-partners__items-wrapper">
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/alfavox.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/pwd.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/nextbike.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/medicover.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/expo.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/intel.jpg" />
-        </div>
-      </div>
-      <p class="conf-partners__heading">WYSTAWCY</p>
-      <div class="conf-partners__items-wrapper">
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/alfavox.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/pwd.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/nextbike.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/medicover.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/expo.jpg" />
-        </div>
-        <div class="conf-partners__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/conference/img/intel.jpg" />
-        </div>
-      </div>
+      <?php endwhile; endif; ?>
     </div>
   </div>
 </section>

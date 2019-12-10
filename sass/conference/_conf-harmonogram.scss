@@ -119,10 +119,11 @@
         font-size: 13px;
         display: flex;
         align-items: center;
-        text-align: center;
+
 
         @media screen and(max-width:$screen-md) {
             justify-content: center;
+            text-align: center;
             height: 44px;
         }
     }

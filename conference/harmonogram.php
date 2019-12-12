@@ -38,7 +38,7 @@
             <p class="conf-harmonogram__text">Aplikacja do kontaktu z uczestnikami
               i prelegentami oraz grywalizacja</p>
           </div>
-          <a class="conf-btn">Kup bilet*</a>
+          <a class="conf-btn" href="<?php echo get_site_url(); ?>/koszyk/?add-to-cart=4203">Kup bilet*</a>
         </div>
         <div class="conf-harmonogram__item conf-harmonogram__item-package">
           <div class="conf-harmonogram__option">
@@ -68,7 +68,7 @@
             <p class="conf-harmonogram__text">Aplikacja do kontaktu z uczestnikami
               i prelegentami oraz grywalizacja</p>
           </div>
-          <a class="conf-btn">Kup bilet*</a>
+          <a class="conf-btn" href="<?php echo get_site_url(); ?>/koszyk/?add-to-cart=4206">Kup bilet*</a>
         </div>
         <div class="conf-harmonogram__item conf-harmonogram__item-package">
           <h3 class="conf-harmonogram__heading">Pakiet standard</h3>
@@ -93,7 +93,7 @@
             <p class="conf-harmonogram__text">Udział w konferencji I love HR</p>
             <p class="conf-harmonogram__text">Lunch i przerwy kawowe</p>
           </div>
-          <a class="conf-btn">Kup bilet*</a>
+          <a class="conf-btn" href="<?php echo get_site_url(); ?>/koszyk/?add-to-cart=4207">Kup bilet*</a>
         </div>
       </div>
     </div>

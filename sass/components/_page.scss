@@ -3,11 +3,11 @@
         .page__wrapper {
             padding-top: 0 !important;
         }
-        
+
         .header {
             background-color: $color-main;
         }
-        
+
         .menu__link {
             color: $color-white;
 
@@ -39,42 +39,42 @@
                 color: $color-main;
             }
         }
-        
-        .single__column-wrapper{
+
+        .single__column-wrapper {
             background-color: $color-white;
             padding: 60px 0;
         }
-        
+
         .page__top:before {
             height: 530px;
         }
-        
+
         .menu-mobile {
             background-color: $color-main;
         }
-        
+
         .hamburger__line {
             background-color: $color-white;
         }
-        
+
     }
-    
+
     &--grey {
         background-color: $color-grey;
-        
+
         .single-top:before {
             background-color: $color-grey;
         }
     }
-    
+
     &__wrapper {
         margin: auto;
         overflow: hidden;
-        max-width: 1600px;
+        max-width: 2000px;
         background-color: $color-grey;
         position: relative;
     }
-    
+
     &__link {
         font-weight: 700;
         font-size: 24px;
@@ -82,26 +82,28 @@
         opacity: 0.5;
         margin-right: 20px;
         position: relative;
-        
+
         &:last-child {
             margin-right: 0;
         }
-        
+
         &--active {
             color: $color-white;
             opacity: 1;
         }
-        
-        &:hover, &:active, &:focus {
+
+        &:hover,
+        &:active,
+        &:focus {
             color: $color-accent;
             opacity: 1;
         }
     }
-    
+
     &__top {
         padding-top: 70px;
         margin-bottom: 0;
-        
+
         &:before {
             content: "";
             position: absolute;
@@ -111,13 +113,13 @@
             height: 70%;
             background-color: $color-main;
         }
-        
+
     }
-    
+
     &__top-wrapper {
         padding-bottom: 30px;
     }
-    
+
     .single__column {
         padding-bottom: 0;
     }

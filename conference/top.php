@@ -32,4 +32,10 @@
       </div>
     </div>
   </div>
+  <div class="conf-top__counting-data">
+    <div class="conf-top__counting-data-year" value="elo"><?php the_field('rok') ?> </div>
+    <div class="conf-top__counting-data-month"><?php the_field('miesiac') ?> </div>
+    <div class="conf-top__counting-data-day"><?php the_field('dzien') ?> </div>
+    <div class="conf-top__counting-data-hour"><?php the_field('godzina') ?> </div>
+  </div>
 </section>

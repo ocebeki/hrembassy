@@ -14,8 +14,9 @@
        </div>
        <div class="conf-slider__bottom">
          <div class="conf-slider__slider" data-slider="prelegenci">
-           <?php if( have_rows('prelegenci_produkt') ): 
-         while ( have_rows('prelegenci_produkt') ) : the_row(); ?>
+           <?php if( have_rows('prelegenci_karta') ): 
+           $counter = 0;
+         while ( have_rows('prelegenci_karta') ) : the_row(); ?>
            <div class="conf-slider__item">
              <div class="conf-slider__item-top">
                <img class="conf-slider__item-img" src="<?php the_sub_field('zdjecie')?>" />
@@ -24,12 +25,14 @@
              <div class="conf-slider__item-midle">
                <?php the_sub_field('tekst') ?>
              </div>
-             <a class="conf-slider__item-btn">Więcej <?php get_template_part('img/svg/arrow.svg'); ?> </a>
+             <div class="conf-slider__item-btn" data-remodal-target="modal-<?php echo $counter ?>">Więcej
+               <?php get_template_part('img/svg/arrow.svg'); ?> </div>
            </div>
-           <?php endwhile;
+           <?php $counter++; endwhile; 
                endif; ?>
          </div>
        </div>
+       <?php get_template_part('conference/slider-modal') ?>
      </div>
    </div>
  </section>

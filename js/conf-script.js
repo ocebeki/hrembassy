@@ -12,12 +12,7 @@
             jQuery(document.body).removeClass('blocked');
         })
 
-        const daysWrapper = document.querySelector('.conf-top__counting-down-day');
-        hoursWrapper = document.querySelector('.conf-top__counting-down-hour');
-        minWrapper = document.querySelector('.conf-top__counting-down-min');
-        secWrapper = document.querySelector('.conf-top__counting-down-sec');
 
-        let countDownDate = new Date("Feb 27, 2020 09:00:00").getTime();
         $('a[href*="#"]')
             .not('[href="#"]')
             .not('[href="#0"]')
@@ -39,32 +34,34 @@
                             scrollTop: target.offset().top
                         }, 1000, function () {
 
-                            var $target = $(target);
-                            $target.focus();
-                            if ($target.is(":focus")) {
-                                return false;
-                            } else {
-                                $target.attr('tabindex', '-1');
-                                $target.focus();
-                            };
                         });
                     }
                 }
             });
 
+        const daysWrapper = document.querySelector('.conf-top__counting-down-day');
+
         if (daysWrapper) {
+
+            hoursWrapper = document.querySelector('.conf-top__counting-down-hour');
+            minWrapper = document.querySelector('.conf-top__counting-down-min');
+            secWrapper = document.querySelector('.conf-top__counting-down-sec');
+
+            const userYear = document.querySelector('.conf-top__counting-data-year').innerHTML;
+            userMonth = document.querySelector('.conf-top__counting-data-month').innerHTML;
+            userDay = document.querySelector('.conf-top__counting-data-day').innerHTML;
+            userHour = document.querySelector('.conf-top__counting-data-hour').innerHTML;
+
+            let countDownDate = new Date(`"${userMonth} ${userDay}, ${userYear} ${userHour}"`).getTime();
 
             setInterval(function () {
 
                 let now = new Date().getTime();
-
-                let distance = countDownDate - now;
-
-
-                let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                distance = countDownDate - now;
+                days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
                 daysWrapper.innerHTML = days
                 hoursWrapper.innerHTML = hours
@@ -131,6 +128,7 @@
         }
 
         prelegenci();
-        partners()
+        partners();
+
     })
 }(jQuery));

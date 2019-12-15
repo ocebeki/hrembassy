@@ -3,102 +3,40 @@
     <div class="conf-harmonogram__wrapper">
       <div class="conf-harmonogram__package-wrapper">
         <div class="conf-harmonogram__item conf-harmonogram__item-content">
-          <h3 class="conf-harmonogram__heading">Zawartość</h3>
-          <p class="conf-harmonogram__text">Udział w konferencji I love HR</p>
-          <p class="conf-harmonogram__text">Nagranie video wszystkich prelekcji</p>
-          <p class="conf-harmonogram__text">Lunch i przerwy kawowe</p>
-          <p class="conf-harmonogram__text">Miejsce w przednim rzędzie
-            “Strefa VIP”</p>
-          <p class="conf-harmonogram__text">Welcome pack dla uczestników VIP</p>
-          <p class="conf-harmonogram__text">Aplikacja do kontaktu z uczestnikami
-            i prelegentami oraz grywalizacja</p>
+          <h3 class="conf-harmonogram__heading"><?php the_field('zawartosc_naglowek') ?></h3>
+          <?php while ( have_rows('podpunkty') ) : the_row(); ?>
+          <p class="conf-harmonogram__text"><?php the_sub_field('podpunkt') ?></p>
+          <?php endwhile; ?>
         </div>
+        <?php  $count = 0; while ( have_rows('pakiet') ) : the_row(); ?>
         <div class="conf-harmonogram__item conf-harmonogram__item-package">
-          <h3 class="conf-harmonogram__heading">Pakiet VIP</h3>
-          <p class="conf-harmonogram__price">999,00 zł</p>
-          <div class="conf-harmonogram__icon"><?php get_template_part('/conference/img/verified.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__icon"><?php get_template_part('/conference/img/verified.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__icon"><?php get_template_part('/conference/img/verified.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__icon"><?php get_template_part('/conference/img/verified.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__icon"><?php get_template_part('/conference/img/verified.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__icon"><?php get_template_part('/conference/img/verified.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__item-content-mobile">
-            <p class="conf-harmonogram__text">Udział w konferencji I love HR</p>
-            <p class="conf-harmonogram__text">Nagranie video wszystkich prelekcji</p>
-            <p class="conf-harmonogram__text">Lunch i przerwy kawowe</p>
-            <p class="conf-harmonogram__text">Miejsce w przednim rzędzie
-              “Strefa VIP”</p>
-            <p class="conf-harmonogram__text">Welcome pack dla uczestników VIP</p>
-            <p class="conf-harmonogram__text">Aplikacja do kontaktu z uczestnikami
-              i prelegentami oraz grywalizacja</p>
-          </div>
-          <a class="conf-btn">Kup bilet*</a>
-        </div>
-        <div class="conf-harmonogram__item conf-harmonogram__item-package">
+          <?php if($count == 1) { ?>
           <div class="conf-harmonogram__option">
             <p class="conf-harmonogram__option-text">Popularna opcja</p>
           </div>
           <div class="conf-harmonogram__triangle"></div>
-          <h3 class="conf-harmonogram__heading">Pakiet full</h3>
-          <p class="conf-harmonogram__price">899,00 zł</p>
-          <div class="conf-harmonogram__icon"><?php get_template_part('/conference/img/verified.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__icon"><?php get_template_part('/conference/img/verified.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__icon"><?php get_template_part('/conference/img/verified.svg'); ?>
-          </div>
+          <?php } ?>
+          <h3 class="conf-harmonogram__heading"><?php the_sub_field('naglowek') ?></h3>
+          <p class="conf-harmonogram__price"><?php the_sub_field('cena') ?></p>
+          <?php while ( have_rows('ikony') ) : the_row(); ?>
           <div class="conf-harmonogram__icon">
-            <?php get_template_part('/conference/img/close-circular-button-symbol.svg'); ?>
+            <?php if (get_sub_field('ikona') == 'zawiera') {
+                                             get_template_part('/conference/img/verified.svg');
+                                             } elseif (get_sub_field('ikona') == 'brak') {
+                                              get_template_part('/conference/img/close-circular-button-symbol.svg');
+                                             }  
+              ?>
           </div>
-          <div class="conf-harmonogram__icon">
-            <?php get_template_part('/conference/img/close-circular-button-symbol.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__icon"><?php get_template_part('/conference/img/verified.svg'); ?>
-          </div>
+          <?php endwhile; ?>
           <div class="conf-harmonogram__item-content-mobile">
-            <p class="conf-harmonogram__text">Udział w konferencji I love HR</p>
-            <p class="conf-harmonogram__text">Nagranie video wszystkich prelekcji</p>
-            <p class="conf-harmonogram__text">Lunch i przerwy kawowe</p>
-            <p class="conf-harmonogram__text">Aplikacja do kontaktu z uczestnikami
-              i prelegentami oraz grywalizacja</p>
+            <?php while ( have_rows('zawartosc_telefon') ) : the_row(); ?>
+            <p class="conf-harmonogram__text"> <?php the_sub_field('podpunkt') ?> </p>
+            <?php endwhile; ?>
           </div>
           <a class="conf-btn">Kup bilet*</a>
         </div>
-        <div class="conf-harmonogram__item conf-harmonogram__item-package">
-          <h3 class="conf-harmonogram__heading">Pakiet standard</h3>
-          <p class="conf-harmonogram__price">799,00 zł</p>
-          <div class="conf-harmonogram__icon"><?php get_template_part('/conference/img/verified.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__icon">
-            <?php get_template_part('/conference/img/close-circular-button-symbol.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__icon"><?php get_template_part('/conference/img/verified.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__icon">
-            <?php get_template_part('/conference/img/close-circular-button-symbol.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__icon">
-            <?php get_template_part('/conference/img/close-circular-button-symbol.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__icon">
-            <?php get_template_part('/conference/img/close-circular-button-symbol.svg'); ?>
-          </div>
-          <div class="conf-harmonogram__item-content-mobile">
-            <p class="conf-harmonogram__text">Udział w konferencji I love HR</p>
-            <p class="conf-harmonogram__text">Lunch i przerwy kawowe</p>
-          </div>
-          <a class="conf-btn">Kup bilet*</a>
-        </div>
+        <?php $count++; endwhile; ?>
       </div>
+      <p class="conf-harmonogram__bottom-caption"><?php the_field('pakiet_link') ?></p>
     </div>
-    <p class="conf-harmonogram__bottom-caption">*Zostaniesz przekierowany do sklepu organizatora konferencji
-      <a class="conf-harmonogram__link">www.hrembassy.pl</a> Podaj wymagane dane, dokonaj zakupu
-      i zaczynaj odliczać dni do najlepszej konferencji HR w Polsce!</p>
-  </div>
 </section>

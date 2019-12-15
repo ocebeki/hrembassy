@@ -29,7 +29,15 @@ function blank_scripts() {
 	wp_enqueue_script( 'sliders', get_template_directory_uri() . '/js/sliders.js');
 	wp_enqueue_script( 'Magic', get_template_directory_uri() . '/js/magic.js');
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array('jquery'));
-	wp_enqueue_script( 'conf-script', get_template_directory_uri() . '/js/conf-script.js', array('jquery'));
+    wp_enqueue_script( 'conf-script', get_template_directory_uri() . '/js/conf-script.js', array('jquery'));
+    
+	wp_enqueue_script( 'remodal', get_template_directory_uri() . '/js/vendor/remodal.js', array('jquery'));
+
+    wp_enqueue_style( 'modalStyletheme', get_template_directory_uri() . '/sass/conference/vendor/remodal-default-theme.css' );
+    wp_enqueue_style( 'modalStyle', get_template_directory_uri() . '/sass/conference/vendor/remodal.css' );
+
+
+
 }
 add_action( 'wp_enqueue_scripts', 'blank_scripts' );
 add_action( 'wp_print_styles', 'tn_dequeue_font_awesome_style' );

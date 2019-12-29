@@ -52,23 +52,54 @@
             userDay = document.querySelector('.conf-top__counting-data-day').innerHTML;
             userHour = document.querySelector('.conf-top__counting-data-hour').innerHTML;
 
-            let countDownDate = new Date(`"${userMonth} ${userDay}, ${userYear} ${userHour}"`).getTime();
+            function countdown(endDate) {
+                let days, hours, minutes, seconds;
 
-            setInterval(function () {
+                endDate = new Date(endDate).getTime();
 
-                let now = new Date().getTime();
-                distance = countDownDate - now;
-                days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                if (isNaN(endDate)) {
+                    return;
+                }
 
-                daysWrapper.innerHTML = days
-                hoursWrapper.innerHTML = hours
-                minWrapper.innerHTML = minutes
-                secWrapper.innerHTML = seconds
+                setInterval(calculate, 1000);
 
-            }, 1000)
+                function calculate() {
+                    let startDate = new Date().getTime();
+
+                    let timeRemaining = parseInt((endDate - startDate) / 1000);
+
+                    if (timeRemaining >= 0) {
+                        days = parseInt(timeRemaining / 86400);
+                        timeRemaining = (timeRemaining % 86400);
+
+                        hours = parseInt(timeRemaining / 3600);
+                        timeRemaining = (timeRemaining % 3600);
+
+                        minutes = parseInt(timeRemaining / 60);
+                        timeRemaining = (timeRemaining % 60);
+
+                        seconds = parseInt(timeRemaining);
+
+
+                        daysWrapper.innerHTML = days
+                        hoursWrapper.innerHTML = hours
+                        minWrapper.innerHTML = minutes
+                        secWrapper.innerHTML = seconds
+
+
+
+                    } else {
+                        return;
+                    }
+                }
+            }
+
+
+
+
+            countdown(`${userMonth.trim()}/${userDay.trim()}/${userYear.trim()} ${userHour.trim()} AM`.trim());
+
+
         }
 
         function prelegenci() {

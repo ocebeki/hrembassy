@@ -89,7 +89,7 @@
                         }
                     }
                 }
-                countdown(`${userMonth.trim()}/${userDay.trim()}/${userYear.trim()} ${userHour.trim()} AM`.trim());
+                countdown(`${userMonth.trim()}/${userDay.trim()}/${userYear.trim()} ${userHour.trim()} AM`);
             }
         }
 

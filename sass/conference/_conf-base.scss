@@ -14,6 +14,26 @@
         background: $color-main;
         color: $color-white;
     }
+    
+    &--full {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 25px;
+        z-index: 2;
+        position: relative;
+
+        svg {
+            margin-left: 10px;
+
+            path {
+                fill: $color-white
+            }
+        }
+
+        @media screen and (max-width:$screen-sm) {
+            height: 60px;
+        }
+    }
 
     &--main {
         background: $color-main;
@@ -27,4 +47,9 @@
 
 .semi-bold {
     font-weight: 500
+}
+
+.conf-heading {
+    @extend .conf-slider__title;
+    color: $color-main;
 }

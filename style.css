@@ -9526,7 +9526,7 @@ label.checkbox span:after {
   margin-bottom: 10px;
 }
 
-.conf-btn {
+.conf-btn, .conf-harmonogram__btn {
   background: #e92e7d;
   border: none;
   width: 155px;
@@ -9538,9 +9538,27 @@ label.checkbox span:after {
   cursor: pointer;
   border-radius: 5px;
 }
-.conf-btn:hover {
+.conf-btn:hover, .conf-harmonogram__btn:hover {
   background: #38275f;
   color: #fff;
+}
+.conf-btn--full {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 25px;
+  z-index: 2;
+  position: relative;
+}
+.conf-btn--full svg {
+  margin-left: 10px;
+}
+.conf-btn--full svg path {
+  fill: #fff;
+}
+@media screen and (max-width: 768px) {
+  .conf-btn--full {
+    height: 60px;
+  }
 }
 .conf-btn--main {
   background: #38275f;
@@ -9553,6 +9571,10 @@ label.checkbox span:after {
   font-weight: 500;
 }
 
+.conf-heading {
+  color: #38275f;
+}
+
 .conf-header {
   position: fixed;
   top: 0;
@@ -9561,9 +9583,21 @@ label.checkbox span:after {
   z-index: 9999;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 992px) {
+  .conf-header .conf-header__logo .ciemny {
+    fill: #735CB7;
+  }
+}
 .conf-header--fixed {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #fff;
   transition: background-color 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.conf-header--fixed .conf-header__menu-link {
+  color: #38275f;
+}
+.conf-header--fixed .conf-header__logo .ciemny {
+  fill: #735CB7;
 }
 .conf-header__wrapper {
   display: flex;
@@ -9613,18 +9647,18 @@ label.checkbox span:after {
 .conf-header__menu-link:hover {
   color: #e92e7d;
 }
-.conf-header .conf-btn {
+.conf-header .conf-btn, .conf-header .conf-harmonogram__btn {
   width: 170px;
   height: 50px;
 }
 @media screen and (max-width: 1350px) {
-  .conf-header .conf-btn {
+  .conf-header .conf-btn, .conf-header .conf-harmonogram__btn {
     width: 140px;
     height: 40px;
   }
 }
 @media screen and (max-width: 480px) {
-  .conf-header .conf-btn {
+  .conf-header .conf-btn, .conf-header .conf-harmonogram__btn {
     margin-top: 50px;
   }
 }
@@ -9634,6 +9668,7 @@ label.checkbox span:after {
   display: flex;
   align-items: center;
   overflow: hidden;
+  margin-bottom: 0;
 }
 .conf-top__wrapper {
   display: flex;
@@ -9662,7 +9697,7 @@ label.checkbox span:after {
   text-align: center;
 }
 @media screen and (max-width: 400px) {
-  .conf-top .conf-btn {
+  .conf-top .conf-btn, .conf-top .conf-harmonogram__btn {
     width: 140px;
     height: 40px;
   }
@@ -9683,7 +9718,7 @@ label.checkbox span:after {
 }
 .conf-top__subtitle {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
 }
 @media screen and (max-width: 480px) {
   .conf-top__subtitle {
@@ -9793,6 +9828,9 @@ label.checkbox span:after {
   display: none;
 }
 
+.conf-why {
+  margin-bottom: 0;
+}
 .conf-why__wrapper {
   padding: 160px 0 118px 0;
 }
@@ -9827,7 +9865,7 @@ label.checkbox span:after {
   }
 }
 @media screen and (max-width: 1350px) {
-  .conf-why .conf-btn {
+  .conf-why .conf-btn, .conf-why .conf-harmonogram__btn {
     margin-bottom: 16px;
   }
 }
@@ -9896,26 +9934,26 @@ label.checkbox span:after {
   font-size: 34px;
   opacity: 0.5;
   font-weight: 700;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
   .conf-why__item-number {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 }
 .conf-why__item-icon {
   width: 95px;
   height: 95px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .conf-why__item-icon {
+    margin-bottom: 30px;
+  }
 }
 .conf-why__item-icon img {
   width: 100%;
   height: 100%;
-}
-@media screen and (max-width: 768px) {
-  .conf-why__item-icon {
-    margin-bottom: 50px;
-  }
 }
 .conf-why__item-text {
   font-weight: 700;
@@ -9984,18 +10022,18 @@ label.checkbox span:after {
     font-size: 16px;
   }
 }
-.conf-hero .conf-btn {
+.conf-hero .conf-btn, .conf-hero .conf-harmonogram__btn {
   margin: auto;
 }
 @media screen and (max-width: 768px) {
-  .conf-hero .conf-btn {
+  .conf-hero .conf-btn, .conf-hero .conf-harmonogram__btn {
     width: 140px;
     height: 40px;
   }
 }
 
 .conf-slider {
-  padding-top: 70px;
+  padding-top: 120px;
   color: #38275f;
 }
 .conf-slider .slick-track {
@@ -10011,10 +10049,15 @@ label.checkbox span:after {
   display: flex;
   justify-content: space-between;
 }
-.conf-slider__title {
+.conf-slider__title, .conf-heading {
   display: inline-block;
   font-size: 24px;
   font-weight: 700;
+}
+.conf-slider__linkedin {
+  width: 100%;
+  flex-shrink: 0;
+  margin-bottom: 15px;
 }
 .conf-slider__arrows {
   width: 120px;
@@ -10099,19 +10142,19 @@ label.checkbox span:after {
 .conf-slider .slick-list {
   margin: 0 -10px;
 }
-.conf-slider .conf-btn {
+.conf-slider .conf-btn, .conf-slider .conf-harmonogram__btn {
   width: 100%;
   height: 100px;
   margin-bottom: 25px;
 }
-.conf-slider .conf-btn svg {
+.conf-slider .conf-btn svg, .conf-slider .conf-harmonogram__btn svg {
   margin-left: 10px;
 }
-.conf-slider .conf-btn svg path {
+.conf-slider .conf-btn svg path, .conf-slider .conf-harmonogram__btn svg path {
   fill: #fff;
 }
 @media screen and (max-width: 768px) {
-  .conf-slider .conf-btn {
+  .conf-slider .conf-btn, .conf-slider .conf-harmonogram__btn {
     height: 60px;
   }
 }
@@ -10213,7 +10256,8 @@ label.checkbox span:after {
 
 .conf-cta {
   color: #38275f;
-  margin-bottom: 128px;
+  margin-bottom: 0;
+  padding-top: 120px;
 }
 @media screen and (max-width: 768px) {
   .conf-cta {
@@ -10444,13 +10488,165 @@ label.checkbox span:after {
   font-size: 12px;
 }
 
-.conf-harmonogram {
-  margin-bottom: 140px;
+.conf-after-party {
+  color: #38275f;
+  margin-top: 120px;
 }
-@media screen and (max-width: 992px) {
-  .conf-harmonogram {
-    margin-bottom: 60px;
+@media screen and (max-width: 768px) {
+  .conf-after-party {
+    margin-top: 60px;
   }
+}
+.conf-after-party__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.conf-after-party__heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 768px) {
+  .conf-after-party__heading {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+}
+.conf-after-party__title {
+  flex-grow: 1;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+.conf-after-party__place {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .conf-after-party__place {
+    text-align: left;
+  }
+}
+.conf-after-party__start {
+  flex-grow: 1;
+  text-align: right;
+}
+.conf-after-party__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .conf-after-party__text-wrapper {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}
+.conf-after-party__text {
+  margin-bottom: 50px;
+  line-height: 20px;
+  width: 42%;
+}
+@media screen and (max-width: 1000px) {
+  .conf-after-party__text {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .conf-after-party__text {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+.conf-after-party__gallery-wrapper {
+  display: flex;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 768px) {
+  .conf-after-party__gallery-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+.conf-after-party__gallery-item {
+  margin: 10px;
+}
+.conf-after-party__gallery-item:nth-child(1) {
+  margin-left: 0;
+}
+@media screen and (max-width: 768px) {
+  .conf-after-party__gallery-item:nth-child(1) {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+.conf-after-party__gallery-item:nth-child(3) {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .conf-after-party__gallery-item:nth-child(3) {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .conf-after-party__gallery-item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .conf-after-party__gallery-item {
+    width: 100%;
+  }
+}
+.conf-after-party__gallery-item-img {
+  width: 100%;
+}
+.conf-after-party__gallery-item-title {
+  margin: 20px 0 15px 0;
+  font-weight: 700;
+  font-size: 17px;
+}
+@media screen and (max-width: 768px) {
+  .conf-after-party__gallery-item-title {
+    margin: 10px 0 8px 0;
+  }
+}
+.conf-after-party__video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 90%;
+  margin: auto;
+}
+@media screen and (max-width: 480px) {
+  .conf-after-party__video-wrapper {
+    width: 67%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .conf-after-party__video-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}
+.conf-after-party__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.conf-harmonogram {
+  margin-bottom: 0;
+  padding-top: 150px;
 }
 .conf-harmonogram__wrapper {
   display: flex;
@@ -10597,7 +10793,7 @@ label.checkbox span:after {
     display: none;
   }
 }
-.conf-harmonogram .conf-btn {
+.conf-harmonogram__btn {
   width: 116px;
   height: 40px;
   color: #e92e7d;
@@ -10607,7 +10803,7 @@ label.checkbox span:after {
   margin-top: 30px;
   cursor: pointer;
 }
-.conf-harmonogram .conf-btn:hover {
+.conf-harmonogram__btn:hover {
   background: #38275f;
 }
 .conf-harmonogram__bottom-caption {
@@ -10638,6 +10834,23 @@ label.checkbox span:after {
   }
 }
 
+.conf-map {
+  margin-bottom: 0;
+  padding-top: 120px;
+}
+.conf-map .map__map {
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 1350px) {
+  .conf-map .map__map {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .conf-map .map__map {
+    margin-bottom: 30px;
+  }
+}
 .conf-map__wrapper {
   background: #fff;
   color: #38275f;
@@ -10710,24 +10923,6 @@ label.checkbox span:after {
 @media screen and (max-width: 992px) {
   .conf-map__heading-bottom {
     font-size: 10px;
-  }
-}
-.conf-map .conf-btn {
-  width: 100%;
-  height: 100px;
-  margin-bottom: 25px;
-  z-index: 2;
-  position: relative;
-}
-.conf-map .conf-btn svg {
-  margin-left: 10px;
-}
-.conf-map .conf-btn svg path {
-  fill: #fff;
-}
-@media screen and (max-width: 768px) {
-  .conf-map .conf-btn {
-    height: 60px;
   }
 }
 

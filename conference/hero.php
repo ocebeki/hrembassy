@@ -4,7 +4,7 @@
       <img class="conf-hero__bc" src="<?php echo get_template_directory_uri(); ?>/conference/img/hero-bc.jpg" />
       <div class=" conf-hero__text-wrapper">
         <h2 class="conf-hero__title"><?php the_field('hero_nagłówek'); ?></h2>
-        <a class="conf-btn conf-btn--main">Kup bilet</a>
+        <a class="conf-btn conf-btn--main" href="#harmonogram">Kup bilet</a>
       </div>
     </div>
   </div>

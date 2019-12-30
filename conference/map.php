@@ -1,24 +1,149 @@
 <section class="conf-map" id="mapa">
-  <div class="container" id="kontakt">
-    <div class="conf-map__wrapper">
-      <div class="conf-map__adress-wrapper">
-        <?php if( have_rows('mapa_adres') ): 
-         while ( have_rows('mapa_adres') ) : the_row(); ?>
-        <div class="conf-map__adress-item">
-          <img src="<?php the_sub_field('ikona'); ?>" class="conf-map__icon" />
-          <p class="conf-map__heading"><?php the_sub_field('naglowek'); ?></p>
-          <div class="conf-map__heading-bottom">
-            <p class="conf-map__first-line"><?php the_sub_field('gorna_linijka'); ?></p>
-            <p class="conf-map__second-line"><?php the_sub_field('dolna_linijka'); ?></p>
-          </div>
-        </div>
-        <?php endwhile;
-               endif; ?>
-      </div>
-      <div class="conf-map">
-        <?php get_template_part('template-parts/conf-map'); ?>
-      </div>
-    </div>
-    <a class="conf-btn">Zostań partenrem <?php get_template_part('img/svg/arrow.svg'); ?></a>
+  <div class="container">
+    <h2 class="conf-heading">Miejsce konferencji: Multikino Złote Tarasy</h2>
+    <div id="map" class="map__map"></div>
+    <a class="conf-btn conf-btn--full prevent" target="_blank" href="mailto:<?php the_field('pakiet_group'); ?>">Zostań partnerem <?php get_template_part('img/svg/arrow.svg'); ?></a>
   </div>
 </section>
+
+<script>
+  var map;
+
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {
+        lat: <?php the_field('lat'); ?>,
+        lng: <?php the_field('lang'); ?>
+      },
+      zoom: 16,
+      disableDefaultUI: true,
+      styles: [{
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [{
+          "color": "#e9e9e9"
+        }, {
+          "lightness": 17
+        }]
+      }, {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [{
+          "color": "#f5f5f5"
+        }, {
+          "lightness": 20
+        }]
+      }, {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [{
+          "color": "#ffffff"
+        }, {
+          "lightness": 17
+        }]
+      }, {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [{
+          "color": "#ffffff"
+        }, {
+          "lightness": 29
+        }, {
+          "weight": 0.2
+        }]
+      }, {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [{
+          "color": "#ffffff"
+        }, {
+          "lightness": 18
+        }]
+      }, {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [{
+          "color": "#ffffff"
+        }, {
+          "lightness": 16
+        }]
+      }, {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [{
+          "color": "#f5f5f5"
+        }, {
+          "lightness": 21
+        }]
+      }, {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [{
+          "color": "#dedede"
+        }, {
+          "lightness": 21
+        }]
+      }, {
+        "elementType": "labels.text.stroke",
+        "stylers": [{
+          "visibility": "on"
+        }, {
+          "color": "#ffffff"
+        }, {
+          "lightness": 16
+        }]
+      }, {
+        "elementType": "labels.text.fill",
+        "stylers": [{
+          "saturation": 36
+        }, {
+          "color": "#333333"
+        }, {
+          "lightness": 40
+        }]
+      }, {
+        "elementType": "labels.icon",
+        "stylers": [{
+          "visibility": "off"
+        }]
+      }, {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [{
+          "color": "#f2f2f2"
+        }, {
+          "lightness": 19
+        }]
+      }, {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [{
+          "color": "#fefefe"
+        }, {
+          "lightness": 20
+        }]
+      }, {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [{
+          "color": "#fefefe"
+        }, {
+          "lightness": 17
+        }, {
+          "weight": 1.2
+        }]
+      }]
+
+    });
+
+    var marker = new google.maps.Marker({
+      position: {
+        lat: <?php the_field('lat'); ?>,
+        lng: <?php the_field('lang'); ?>
+      },
+      map: map,
+      icon: '<?php echo get_home_url(); ?>/wp-content/themes/blank/img/circle.png',
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ1tpY5otDDLT4E84gg-RS3JHnfR2QbqY&callback=initMap" async defer></script>

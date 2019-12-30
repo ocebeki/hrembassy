@@ -1,4 +1,19 @@
 .conf-map {
+    margin-bottom: 0;
+    padding-top: 120px;
+
+    .map__map {
+        margin-bottom: 80px;
+
+        @media screen and (max-width:$screen-lg) {
+            margin-bottom: 50px;
+        }
+
+        @media screen and (max-width:$screen-md) {
+            margin-bottom: 30px;
+        }
+    }
+    
     &__wrapper {
         background: $color-white;
         color: $color-main;
@@ -76,26 +91,6 @@
     &__heading-bottom {
         @media screen and (max-width:$screen-md) {
             font-size: 10px;
-        }
-    }
-
-    .conf-btn {
-        width: 100%;
-        height: 100px;
-        margin-bottom: 25px;
-        z-index: 2;
-        position: relative;
-
-        svg {
-            margin-left: 10px;
-
-            path {
-                fill: $color-white
-            }
-        }
-
-        @media screen and (max-width:$screen-sm) {
-            height: 60px;
         }
     }
 }

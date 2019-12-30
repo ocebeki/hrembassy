@@ -7,7 +7,7 @@
       <div class="conf-footer__social">
         <?php get_template_part('template-parts/social'); ?>
       </div>
-      <?php the_field('link'); ?>
+      <div class="conf-footer__text">Projekt i realizacja:<span>&nbsp;</span> <a href="http://propercolors.pl/" target="_blank">www.propercolors.pl</a></div>
     </div>
   </div>
 </footer>

@@ -1,5 +1,5 @@
 .conf-slider {
-    padding-top: 70px;
+    padding-top: 120px;
     color: $color-main;
 
     .slick-track {
@@ -24,6 +24,12 @@
         display: inline-block;
         font-size: 24px;
         font-weight: 700;
+    }
+
+    &__linkedin {
+        width: 100%;
+        flex-shrink: 0;
+        margin-bottom: 15px;
     }
 
     &__arrows {

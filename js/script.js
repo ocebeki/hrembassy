@@ -316,6 +316,10 @@
             popup();
             singleBlog();
             kpop();
+
+            $('.prevent').each(function () {
+                $(this).replaceWith($(this).clone())
+            });
         }
 
         window.addEventListener('resize', function () {

@@ -1,4 +1,6 @@
 .conf-why {
+    margin-bottom: 0;
+
     &__wrapper {
         padding: 160px 0 118px 0;
 
@@ -105,25 +107,25 @@
         font-size: 34px;
         opacity: 0.5;
         font-weight: 700;
-        margin-bottom: 70px;
+        margin-bottom: 20px;
 
         @media screen and (max-width:$screen-sm) {
-            margin-bottom: 50px;
+            margin-bottom: 10px;
         }
     }
 
     &__item-icon {
         width: 95px;
         height: 95px;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
+
+        @media screen and (max-width:$screen-sm) {
+            margin-bottom: 30px;
+        }
 
         img {
             width: 100%;
             height: 100%;
-        }
-
-        @media screen and (max-width:$screen-sm) {
-            margin-bottom: 50px;
         }
     }
 

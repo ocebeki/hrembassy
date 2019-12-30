@@ -6,9 +6,28 @@
     z-index: 9999;
     transform: translateX(-50%);
 
+    @media screen and (max-width: $screen-md) {
+        .conf-header__logo {
+            .ciemny {
+                fill: #735CB7;
+            }
+        }
+    }
+
     &--fixed {
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: $color-white;
         transition: background-color 0.3s;
+        box-shadow: 0 0 10px rgba($color-black, 0.2);
+
+        .conf-header__menu-link {
+            color: $color-main;
+        }
+
+        .conf-header__logo {
+            .ciemny {
+                fill: #735CB7;
+            }
+        }
     }
 
     &__wrapper {

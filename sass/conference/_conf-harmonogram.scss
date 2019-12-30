@@ -1,8 +1,9 @@
 .conf-harmonogram {
-    margin-bottom: 140px;
+    margin-bottom: 0;
+    padding-top: 150px;
 
     @media screen and(max-width:$screen-md) {
-        margin-bottom: 60px;
+        
     }
 
     &__wrapper {
@@ -164,7 +165,8 @@
         }
     }
 
-    .conf-btn {
+    &__btn {
+        @extend .conf-btn;
         width: 116px;
         height: 40px;
         color: $color-accent;

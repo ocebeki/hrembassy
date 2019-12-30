@@ -3,16 +3,16 @@
 <section class="section warsztaty-menu warsztaty-menu--blog">
     <div class="container">
         <div class="warsztaty-menu__wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/warsztaty-menu.png" alt=""
-                data-scroll="fadeLeft" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/warsztaty-menu.png" alt="" data-scroll="fadeLeft" />
             <div class="blog__dropdown">
                 <?php get_template_part('template-parts/blog-dropdown'); ?>
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/warsztaty-menu.png" alt=""
-                data-scroll="fadeRight" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/warsztaty-menu.png" alt="" data-scroll="fadeRight" />
         </div>
     </div>
 </section>
+
+
 <section class="section">
     <div class="container">
         <div class="blog__section">
